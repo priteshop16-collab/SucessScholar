@@ -1,0 +1,3187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success Scholar | Empower. Elevate. Evolve. — ISO 9001:2015 Certified</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @keyframes infiniteScrollLeft {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+    .animate-marquee-infinite {
+      display: flex;
+      width: max-content;
+      animation: infiniteScrollLeft 32s linear infinite;
+    }
+    .animate-marquee-slow {
+      display: flex;
+      width: max-content;
+      animation: infiniteScrollLeft 42s linear infinite;
+    }
+    .marquee-container:hover .animate-marquee-infinite,
+    .marquee-container:hover .animate-marquee-slow {
+      animation-play-state: paused;
+    }
+    .line-clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Full-Site Dark Mode Overrides */
+    html.dark body {
+      background-color: #020617;
+      color: #e2e8f0;
+    }
+    html.dark header {
+      background-color: rgba(15, 23, 42, 0.92) !important;
+      border-color: #1e293b !important;
+    }
+    html.dark .bg-white,
+    html.dark .bg-slate-50,
+    html.dark .bg-slate-50\/90,
+    html.dark .bg-slate-50\/50,
+    html.dark .bg-slate-100\/70 {
+      background-color: #0f172a !important;
+      color: #e2e8f0 !important;
+    }
+    html.dark .bg-slate-100 {
+      background-color: #1e293b !important;
+      color: #cbd5e1 !important;
+    }
+    html.dark .bg-blue-50 {
+      background-color: rgba(30, 58, 138, 0.35) !important;
+      border-color: rgba(59, 130, 246, 0.4) !important;
+    }
+    html.dark .bg-blue-100,
+    html.dark .bg-blue-100\/80 {
+      background-color: rgba(30, 58, 138, 0.5) !important;
+      border-color: rgba(59, 130, 246, 0.5) !important;
+    }
+    html.dark .bg-emerald-50 {
+      background-color: rgba(6, 78, 59, 0.35) !important;
+      border-color: rgba(16, 185, 129, 0.4) !important;
+    }
+    html.dark .bg-emerald-100 {
+      background-color: rgba(6, 78, 59, 0.5) !important;
+      border-color: rgba(16, 185, 129, 0.5) !important;
+    }
+    html.dark .bg-amber-50 {
+      background-color: rgba(120, 53, 15, 0.35) !important;
+      border-color: rgba(245, 158, 11, 0.4) !important;
+    }
+    html.dark .bg-indigo-50 {
+      background-color: rgba(49, 46, 129, 0.35) !important;
+      border-color: rgba(99, 102, 241, 0.4) !important;
+    }
+    html.dark .text-blue-700,
+    html.dark .text-blue-800,
+    html.dark .text-blue-900 {
+      color: #93c5fd !important;
+    }
+    html.dark .text-emerald-700,
+    html.dark .text-emerald-800,
+    html.dark .text-emerald-900 {
+      color: #6ee7b7 !important;
+    }
+    html.dark .text-amber-700,
+    html.dark .text-amber-800,
+    html.dark .text-amber-900 {
+      color: #fcd34d !important;
+    }
+    html.dark .text-indigo-600,
+    html.dark .text-indigo-700 {
+      color: #a5b4fc !important;
+    }
+    html.dark .text-slate-900,
+    html.dark .text-slate-800 {
+      color: #f8fafc !important;
+    }
+    html.dark .text-slate-700,
+    html.dark .text-slate-600 {
+      color: #cbd5e1 !important;
+    }
+    html.dark .text-slate-500 {
+      color: #94a3b8 !important;
+    }
+    html.dark .border-slate-200,
+    html.dark .border-slate-200\/90,
+    html.dark .border-slate-200\/80,
+    html.dark .border-slate-100,
+    html.dark .border-slate-300 {
+      border-color: #1e293b !important;
+    }
+    html.dark input,
+    html.dark select {
+      background-color: #1e293b !important;
+      color: #f8fafc !important;
+      border-color: #334155 !important;
+    }
+    html.dark #hero {
+      background: linear-gradient(to bottom, #0f172a, #020617) !important;
+    }
+    html.dark #universities {
+      background: linear-gradient(to bottom, #0f172a, #020617, #0f172a) !important;
+    }
+    html.dark .from-white {
+      --tw-gradient-from: #0f172a !important;
+    }
+    html.dark .via-white\/80 {
+      --tw-gradient-via: rgba(15, 23, 42, 0.8) !important;
+    }
+    html.dark .from-slate-50 {
+      --tw-gradient-from: #020617 !important;
+    }
+    html.dark .via-slate-50\/80 {
+      --tw-gradient-via: rgba(2, 6, 23, 0.8) !important;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-200">
+
+  <!-- 1. TOP ANNOUNCEMENT & ACCREDITATION BANNER -->
+  <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white text-xs sm:text-sm py-2 px-4 shadow-inner">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 font-medium">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span class="bg-blue-500/30 text-blue-200 px-2 py-0.5 rounded text-[11px] font-semibold tracking-wide uppercase">New Cohort</span>
+        <span>Internship &amp; Placement Immersion 2026 Batch Admissions Open!</span>
+      </div>
+
+      <div class="flex items-center gap-3 sm:gap-4 text-slate-300 text-xs">
+        <span class="hidden sm:flex items-center gap-1.5 font-medium text-emerald-300">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i>
+          ISO 9001:2015 Certified
+        </span>
+        <span class="hidden sm:inline-block text-slate-500">|</span>
+        <button
+          onclick="toggleTheme()"
+          id="theme-toggle-btn"
+          class="flex items-center gap-1.5 bg-white/10 hover:bg-white/20 px-2.5 py-1 rounded text-white font-medium transition text-xs cursor-pointer"
+          title="Switch Light / Dark Mode"
+        >
+          <i data-lucide="moon" id="theme-icon" class="w-3.5 h-3.5 text-amber-300"></i>
+          <span id="theme-label">Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. STICKY MODERN NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group shrink-0">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform shrink-0">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="text-lg sm:text-xl font-black tracking-tight text-slate-900 group-hover:text-blue-700 transition-colors whitespace-nowrap">
+                SUCCESS SCHOLAR
+              </span>
+              <span class="hidden xl:inline-block text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-blue-50 text-blue-700 border border-blue-200 rounded whitespace-nowrap">
+                ISO Certified
+              </span>
+            </div>
+            <span class="text-[10px] sm:text-[11px] font-semibold text-slate-500 tracking-wider uppercase -mt-0.5 whitespace-nowrap">
+              Your Vision. Our Mission.
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="#hero" class="hover:text-blue-600 transition-colors whitespace-nowrap">Home</a>
+          <a href="#cohort" class="hover:text-blue-600 transition-colors flex items-center gap-1.5 text-blue-700 font-semibold whitespace-nowrap">
+            Internship 2026
+            <span class="bg-emerald-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full animate-pulse">Live</span>
+          </a>
+          <a href="#courses" class="hover:text-blue-600 transition-colors whitespace-nowrap">Courses</a>
+          <a href="#universities" class="hover:text-blue-600 transition-colors whitespace-nowrap">Campuses</a>
+          <a href="#gallery" class="hover:text-blue-600 transition-colors whitespace-nowrap">Gallery</a>
+          <a href="#partners" class="hover:text-blue-600 transition-colors whitespace-nowrap">Partners</a>
+          <a href="#values" class="hover:text-blue-600 transition-colors whitespace-nowrap">Values</a>
+          <a href="#faq" class="hover:text-blue-600 transition-colors whitespace-nowrap">FAQ</a>
+        </nav>
+
+        <!-- Action Buttons (Uniform Height h-10 & Single-Line Alignment) -->
+        <div class="flex items-center gap-2.5 shrink-0">
+          <!-- Logged Out State -->
+          <div id="auth-logged-out-controls" class="hidden md:flex items-center gap-2.5">
+            <button
+              onclick="openAuthModal('student')"
+              class="h-10 px-4 text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+            >
+              <i data-lucide="user-check" class="w-4 h-4 shrink-0"></i>
+              <span>Student Login</span>
+            </button>
+            <button
+              onclick="openAuthModal('admin')"
+              class="h-10 px-4 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+            >
+              <i data-lucide="shield" class="w-4 h-4 text-indigo-600 shrink-0"></i>
+              <span>Admin Login</span>
+            </button>
+          </div>
+
+          <!-- Logged In State -->
+          <div id="auth-logged-in-controls" class="hidden items-center gap-2.5">
+            <span id="nav-user-badge" class="h-10 px-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold flex items-center gap-1.5 whitespace-nowrap"></span>
+            <button
+              id="nav-portal-btn"
+              onclick="openRoleDashboard()"
+              class="h-10 px-4 text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl transition flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
+            >
+              <i data-lucide="layout-dashboard" class="w-4 h-4 shrink-0"></i>
+              <span id="nav-portal-label">Portal</span>
+            </button>
+            <button
+              onclick="logoutUser()"
+              class="h-10 px-3.5 text-xs font-bold text-slate-600 hover:text-red-600 hover:bg-red-50 border border-slate-200 rounded-xl transition whitespace-nowrap cursor-pointer"
+              title="Logout"
+            >
+              Logout
+            </button>
+          </div>
+
+          <button
+            onclick="handleStudentEnrollAction('Campus-to-Corporate Readiness')"
+            class="hidden sm:inline-flex h-10 px-5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 active:scale-95 rounded-xl shadow-md shadow-blue-600/20 transition-all items-center gap-1.5 whitespace-nowrap cursor-pointer"
+          >
+            <span>Enroll Now</span>
+            <i data-lucide="chevron-right" class="w-4 h-4 shrink-0"></i>
+          </button>
+
+          <!-- Three-Line Quick Links Menu Button -->
+          <button
+            onclick="toggleMobileMenu()"
+            class="h-10 w-10 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl border border-slate-200 flex items-center justify-center focus:outline-none cursor-pointer transition"
+            aria-label="Open Quick Links Menu"
+            title="All Quick Links"
+          >
+            <i data-lucide="menu" id="mobile-menu-icon" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Links Slide-Down Drawer (Triggered by Three-Line Button) -->
+    <div id="mobile-menu" class="hidden border-b border-slate-200 bg-white px-4 sm:px-6 pt-4 pb-6 shadow-xl">
+      <div class="max-w-7xl mx-auto space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Quick Navigation Links</span>
+          <span class="text-[11px] font-semibold text-blue-600">Success Scholar Portal</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-sm font-semibold text-slate-700">
+          <a href="#hero" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="home" class="w-4 h-4 text-blue-600"></i>
+            <span>Home</span>
+          </a>
+          <a href="#cohort" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 text-blue-600 font-bold flex items-center gap-2 transition">
+            <i data-lucide="sparkles" class="w-4 h-4 text-emerald-500"></i>
+            <span>Internship 2026 Batch</span>
+          </a>
+          <a href="#courses" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="book-open" class="w-4 h-4 text-blue-600"></i>
+            <span>Curriculum &amp; Courses</span>
+          </a>
+          <a href="#universities" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="school" class="w-4 h-4 text-indigo-600"></i>
+            <span>University &amp; Campus Tie-Ups</span>
+          </a>
+          <a href="#partners" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="briefcase" class="w-4 h-4 text-blue-600"></i>
+            <span>Global Industry Pioneers</span>
+          </a>
+          <a href="#gallery" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="image" class="w-4 h-4 text-sky-600"></i>
+            <span>Photo Gallery</span>
+          </a>
+          <a href="#testimonials" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="users" class="w-4 h-4 text-emerald-600"></i>
+            <span>The Transformation Journey</span>
+          </a>
+          <a href="#values" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="shield-check" class="w-4 h-4 text-indigo-600"></i>
+            <span>Vision &amp; Core Values</span>
+          </a>
+          <a href="#faq" onclick="closeMobileMenu()" class="px-3.5 py-2.5 rounded-xl hover:bg-slate-100 flex items-center gap-2 transition">
+            <i data-lucide="help-circle" class="w-4 h-4 text-blue-600"></i>
+            <span>Frequently Asked Questions</span>
+          </a>
+        </div>
+
+        <div class="pt-3 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+          <button
+            onclick="closeMobileMenu(); openAuthModal('student');"
+            class="h-10 text-center text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl transition cursor-pointer"
+          >
+            Student Login / Register
+          </button>
+          <button
+            onclick="closeMobileMenu(); openAuthModal('admin');"
+            class="h-10 text-center text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-xl transition cursor-pointer"
+          >
+            Admin Portal Login
+          </button>
+          <button
+            onclick="closeMobileMenu(); handleStudentEnrollAction('Campus-to-Corporate Readiness');"
+            class="h-10 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-sm transition cursor-pointer"
+          >
+            Apply for Cohort
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION (SPLIT-DIAGONAL COVER: WRITING ON LEFT, STUDENT COVER + CERTIFICATIONS + LABELS ON RIGHT) -->
+  <section id="hero" class="relative overflow-hidden bg-white border-b border-slate-200/80">
+    <!-- Blue Diagonal Background Layer -->
+    <div class="hidden lg:block absolute inset-0 bg-gradient-to-br from-[#0b49b6] via-[#0d4ec2] to-[#083891] pointer-events-none" style="clip-path: polygon(0 0, 74% 0, 48% 100%, 0% 100%);"></div>
+    <div class="lg:hidden absolute inset-0 bg-gradient-to-b from-[#0b49b6] via-[#0d4ec2] to-slate-50 pointer-events-none"></div>
+
+    <!-- Top-Right ISO 9001:2015 Certified Badge Slot -->
+    <div class="hidden sm:flex items-center justify-center absolute top-5 right-6 z-20 w-16 h-16 rounded-full bg-white shadow-md border border-slate-200 p-1.5 overflow-hidden transition-transform duration-300 hover:scale-110" title="ISO 9001:2015 Certified">
+      <img
+        id="hero-iso-logo"
+        src=""
+        alt="ISO 9001:2015 Certified"
+        class="hidden w-full h-full object-contain"
+        onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+        onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+      />
+      <div class="w-full h-full rounded-full border-2 border-blue-900 flex flex-col items-center justify-center text-center leading-none bg-blue-50">
+        <span class="text-[7px] font-black text-blue-900 uppercase">Certified</span>
+        <span class="text-[11px] font-black text-white bg-blue-900 px-1.5 py-0.5 rounded-xs my-0.5">ISO</span>
+        <span class="text-[6px] font-bold text-blue-900">9001:2015</span>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-0 lg:pt-14 lg:pb-0 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+
+        <!-- Left Side: White Writing Card (Empower. Elevate. Evolve.) -->
+        <div class="lg:col-span-5 pb-8 lg:pb-14 self-center">
+          <div class="bg-white rounded-2xl p-7 sm:p-9 shadow-2xl border border-slate-200/90 space-y-5">
+            <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-black text-[#0a2463] tracking-tight leading-[1.12]">
+              Empower. Elevate.<br />Evolve.
+            </h1>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              At <strong class="text-slate-800 font-semibold">Success Scholar</strong>, we empower learners with essential skills in leadership, communication, and real-world problem-solving. Our Immersion Program bridges the gap from campus to corporate, preparing graduates to meet industry standards. Through a transformative learning journey, we shape confident, industry-ready professionals equipped to excel and lead in today’s dynamic workplace.
+            </p>
+
+            <!-- Log In & Register Buttons -->
+            <div class="flex flex-wrap items-center gap-3 pt-1">
+              <button
+                onclick="openAuthModal('student')"
+                class="px-6 py-2.5 bg-white hover:bg-slate-50 border border-[#0a2463] text-[#0a2463] font-bold text-xs sm:text-sm rounded-lg transition cursor-pointer"
+              >
+                Log in
+              </button>
+              <button
+                onclick="handleStudentEnrollAction('Internship 2026 Immersion')"
+                class="px-6 py-2.5 bg-[#0a2463] hover:bg-blue-900 text-white font-bold text-xs sm:text-sm rounded-lg shadow-md transition flex items-center gap-1.5 cursor-pointer"
+              >
+                <span>Register</span>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Cover Boy Photo + Accreditation Logos (EGAC, MSME, IAF) + Hover-Zoom Metric Labels + 3 Social Buttons -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+
+          <!-- Cover Boy Portrait Slot (Bottom-Aligned on the Diagonal Seam) -->
+          <div class="sm:col-span-7 flex items-end justify-center relative">
+            <div class="relative w-full max-w-[360px] h-[340px] sm:h-[420px] lg:h-[450px] flex items-end justify-center overflow-hidden group">
+              <img
+                id="hero-student-image"
+                src=""
+                alt="Success Scholar Cover Student"
+                class="hidden w-full h-full object-contain object-bottom drop-shadow-[0_18px_24px_rgba(10,36,99,0.25)] transition-transform duration-300 group-hover:scale-[1.02]"
+                onload="this.classList.remove('hidden'); document.getElementById('hero-student-placeholder').classList.add('hidden');"
+                onerror="this.classList.add('hidden'); document.getElementById('hero-student-placeholder').classList.remove('hidden');"
+              />
+              <div id="hero-student-placeholder" class="w-full h-[320px] sm:h-[380px] mb-6 rounded-3xl bg-white/85 backdrop-blur-md border-2 border-dashed border-blue-400 flex flex-col items-center justify-center p-6 text-center shadow-lg">
+                <div class="w-16 h-16 rounded-2xl bg-[#0a2463] text-white flex items-center justify-center mb-3 shadow-md">
+                  <i data-lucide="user" class="w-8 h-8"></i>
+                </div>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-[#0a2463] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+                  Cover Student Photo Slot
+                </span>
+                <p class="text-[11px] text-slate-600 mt-2.5 leading-snug">
+                  Set <code class="font-mono font-bold text-blue-700">studentPhotoUrl</code> inside <code class="font-mono font-bold">HERO_COVER_ASSETS</code> (e.g. <code class="font-mono">'student.png'</code>)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Far Right Column: Certifications (EGAC, MSME, IAF), Hover-Zoom Labels & 3 Social Buttons -->
+          <div class="sm:col-span-5 flex flex-col items-center sm:items-end pb-8 lg:pb-12 space-y-4">
+
+            <!-- 3 Accreditation Logos: EGAC Accredited, MSME, IAF -->
+            <div class="flex items-center justify-center gap-2.5 bg-white/95 backdrop-blur-xs px-3 py-2 rounded-2xl border border-slate-200/90 shadow-sm">
+              <div class="w-13 h-12 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center p-1 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-md cursor-pointer" title="EGAC Accredited">
+                <img
+                  id="hero-egac-logo"
+                  src=""
+                  alt="EGAC Accredited"
+                  class="hidden w-full h-full object-contain"
+                  onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+                  onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                />
+                <div class="text-center leading-none">
+                  <span class="block text-[9px] font-black text-blue-900">EGAC</span>
+                  <span class="block text-[7px] font-semibold text-slate-500 mt-0.5">Accredited</span>
+                </div>
+              </div>
+
+              <div class="w-13 h-12 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center p-1 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-md cursor-pointer" title="MSME Registered">
+                <img
+                  id="hero-msme-logo"
+                  src=""
+                  alt="MSME Logo"
+                  class="hidden w-full h-full object-contain"
+                  onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+                  onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                />
+                <div class="text-center leading-none">
+                  <span class="block text-[9px] font-black text-amber-700">MSME</span>
+                  <span class="block text-[7px] font-semibold text-slate-500 mt-0.5">Govt. India</span>
+                </div>
+              </div>
+
+              <div class="w-13 h-12 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center p-1 overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-md cursor-pointer" title="IAF Accredited">
+                <img
+                  id="hero-iaf-logo"
+                  src=""
+                  alt="IAF Logo"
+                  class="hidden w-full h-full object-contain"
+                  onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+                  onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                />
+                <div class="text-center leading-none">
+                  <span class="block text-[9px] font-black text-sky-800">IAF</span>
+                  <span class="block text-[7px] font-semibold text-slate-500 mt-0.5">Member</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Stacked Metric Pills (Zoom on Mouse Hover) -->
+            <div class="w-full max-w-[225px] space-y-2.5">
+              <div class="bg-white rounded-full px-4 py-2.5 shadow-md border border-slate-200/90 flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                <div class="w-8 h-8 rounded-full bg-blue-900 text-white flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                  <i data-lucide="award" class="w-4 h-4"></i>
+                </div>
+                <div class="text-center flex-1 pr-2">
+                  <div class="text-sm font-black text-slate-900 leading-tight">5 M+</div>
+                  <div class="text-[9px] font-bold uppercase tracking-wider text-slate-500">Engagements</div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-full px-4 py-2.5 shadow-md border border-slate-200/90 flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                <div class="w-8 h-8 rounded-full bg-blue-900 text-white flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                  <i data-lucide="building-2" class="w-4 h-4"></i>
+                </div>
+                <div class="text-center flex-1 pr-2">
+                  <div class="text-sm font-black text-slate-900 leading-tight">113+</div>
+                  <div class="text-[9px] font-bold uppercase tracking-wider text-slate-500">Campus Score</div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-full px-4 py-2.5 shadow-md border border-slate-200/90 flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                <div class="w-8 h-8 rounded-full bg-blue-900 text-white flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                  <i data-lucide="clock" class="w-4 h-4"></i>
+                </div>
+                <div class="text-center flex-1 pr-2">
+                  <div class="text-sm font-black text-slate-900 leading-tight">17,000+</div>
+                  <div class="text-[9px] font-bold uppercase tracking-wider text-slate-500">Mentored</div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-full px-4 py-2.5 shadow-md border border-slate-200/90 flex items-center gap-3 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                <div class="w-8 h-8 rounded-full bg-blue-900 text-white flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
+                  <i data-lucide="user-check" class="w-4 h-4"></i>
+                </div>
+                <div class="text-center flex-1 pr-2">
+                  <div class="text-sm font-black text-slate-900 leading-tight">52,000+</div>
+                  <div class="text-[9px] font-bold uppercase tracking-wider text-slate-500">Trained</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 Small Social Buttons with Replaceable Logos (Empty href="" + onclick opens profile in new tab) -->
+            <div class="flex items-center justify-center gap-3 pt-1">
+              <a
+                href=""
+                onclick="openSocialProfile(event, 0)"
+                class="w-9 h-9 rounded-lg bg-white hover:bg-blue-50 border border-slate-200 shadow-sm flex items-center justify-center overflow-hidden transition hover:scale-110 cursor-pointer"
+                title="Social Profile 1"
+              >
+                <img
+                  id="social-btn-logo-0"
+                  src=""
+                  alt="Social 1"
+                  class="hidden w-5 h-5 object-contain"
+                  onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+                  onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                />
+                <span class="font-black text-xs text-blue-700">f</span>
+              </a>
+
+              <a
+                href=""
+                onclick="openSocialProfile(event, 1)"
+                class="w-9 h-9 rounded-lg bg-white hover:bg-sky-50 border border-slate-200 shadow-sm flex items-center justify-center overflow-hidden transition hover:scale-110 cursor-pointer"
+                title="LinkedIn Profile"
+              >
+                <img
+                  id="social-btn-logo-1"
+                  src=""
+                  alt="LinkedIn"
+                  class="hidden w-5 h-5 object-contain"
+                  onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+                  onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                />
+                <span class="font-black text-xs text-sky-700">in</span>
+              </a>
+
+              <a
+                href=""
+                onclick="openSocialProfile(event, 2)"
+                class="w-9 h-9 rounded-lg bg-white hover:bg-emerald-50 border border-slate-200 shadow-sm flex items-center justify-center overflow-hidden transition hover:scale-110 cursor-pointer"
+                title="WhatsApp / Social 3"
+              >
+                <img
+                  id="social-btn-logo-2"
+                  src=""
+                  alt="WhatsApp"
+                  class="hidden w-5 h-5 object-contain"
+                  onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');"
+                  onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                />
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. HIRING RECRUITERS & INDUSTRY PIONEERS (INFINITE RIGHT-TO-LEFT SCROLL) -->
+  <section id="partners" class="py-14 bg-white border-y border-slate-200/90 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div>
+          <span class="text-xs uppercase font-extrabold tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block mb-1">
+            Corporate Footprint
+          </span>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+            Our Students Are Placed with Global Industry Pioneers
+          </h3>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>120+ Verified Hiring Partners</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative w-full overflow-hidden marquee-container py-3">
+      <div class="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+      <div id="recruiters-marquee-track" class="animate-marquee-infinite flex gap-5 items-center"></div>
+    </div>
+
+    <p class="text-center text-xs text-slate-400 mt-4">
+      Hover over any card to pause the live reel • Highest Package Achieved: <strong class="text-slate-700">₹14.2 LPA</strong>
+    </p>
+  </section>
+
+  <!-- 5. INTERNSHIP 2026 COHORT TRACKER -->
+  <section id="cohort" class="py-16 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-white/20 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+          <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
+            <div id="cohort-status-pill" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span id="cohort-status-text">Admissions Open • Limited Intake</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-tight">
+              INTERNSHIP 2026 IMMERSION
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Fast-track your corporate readiness with high-intensity simulations: Employability &amp; Executive Soft Skills, Entrepreneurship Mindset, and Technical Specializations.
+            </p>
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-slate-300">
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Guaranteed Mock Panels</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Direct Recruiter Shortlists</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Corporate Mentorship</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-slate-900/80 rounded-2xl p-6 border border-slate-700/80 shadow-xl space-y-5">
+            <div class="text-center">
+              <span class="text-[11px] font-bold tracking-wider text-blue-400 uppercase">Early-Bird Closes In</span>
+              <div class="grid grid-cols-4 gap-2 mt-2">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-2 text-center">
+                  <span id="timer-days" class="block text-2xl font-black text-white">34</span>
+                  <span class="text-[10px] text-slate-400 uppercase font-semibold">Days</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-2 text-center">
+                  <span id="timer-hours" class="block text-2xl font-black text-white">14</span>
+                  <span class="text-[10px] text-slate-400 uppercase font-semibold">Hours</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-2 text-center">
+                  <span id="timer-mins" class="block text-2xl font-black text-white">42</span>
+                  <span class="text-[10px] text-slate-400 uppercase font-semibold">Mins</span>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-2 text-center">
+                  <span id="timer-secs" class="block text-2xl font-black text-emerald-400">19</span>
+                  <span class="text-[10px] text-slate-400 uppercase font-semibold">Secs</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs text-slate-300 font-medium mb-1.5">
+                <span>Batch Capacity</span>
+                <span id="cohort-capacity-text" class="text-emerald-400 font-bold">4% Filled (2 / 50 Seats)</span>
+              </div>
+              <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                <div id="cohort-capacity-bar" class="bg-gradient-to-r from-blue-500 to-emerald-400 h-2.5 rounded-full transition-all duration-500" style="width: 4%"></div>
+              </div>
+            </div>
+
+            <button
+              id="cohort-apply-btn"
+              onclick="handleStudentEnrollAction('Internship 2026 Immersion')"
+              class="w-full py-3.5 px-6 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-500/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <span id="cohort-apply-btn-label">Apply for Priority Access</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. INTERACTIVE COURSE CATALOG & SYLLABUS VIEWER -->
+  <section id="courses" class="py-20 bg-slate-100/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Industry-Aligned Training Programs
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Crafted by seasoned corporate HR leaders to elevate your communication, leadership presence, and placement probability.
+        </p>
+      </div>
+
+      <!-- Search Bar & Category Filter Pills -->
+      <div class="max-w-4xl mx-auto space-y-4 mb-10">
+        <div class="relative">
+          <i data-lucide="search" class="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input
+            type="text"
+            id="course-search-input"
+            oninput="handleCourseSearch(this.value)"
+            placeholder="Search courses by skill (e.g. 'Interview', 'Soft Skills', 'Leadership')..."
+            class="w-full pl-12 pr-20 py-3.5 bg-white border border-slate-300 rounded-2xl shadow-xs text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+          />
+          <button
+            id="course-search-clear"
+            onclick="clearCourseSearch()"
+            class="hidden absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-bold bg-slate-100 px-2 py-1 rounded cursor-pointer"
+          >
+            Clear
+          </button>
+        </div>
+
+        <div id="category-pills-container" class="flex flex-wrap items-center justify-center gap-2 pt-2"></div>
+      </div>
+
+      <div id="courses-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <div id="courses-empty-state" class="hidden text-center py-16 bg-white rounded-3xl border border-slate-200 max-w-md mx-auto">
+        <i data-lucide="book-open" class="w-12 h-12 text-slate-400 mx-auto mb-3"></i>
+        <h4 class="font-bold text-slate-800">No matching programs found</h4>
+        <p class="text-xs text-slate-500 mt-1">Try adjusting your search terms or selecting 'All'.</p>
+        <button onclick="resetCourseFilters()" class="mt-4 px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-lg cursor-pointer">
+          Reset Filters
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. UNIVERSITY & CAMPUS TIE-UPS (PLACED STRICTLY BETWEEN COURSES AND THE TRANSFORMATION JOURNEY) -->
+  <section id="universities" class="py-16 bg-gradient-to-b from-white via-slate-50 to-white border-y border-slate-200 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+      <div class="text-center max-w-3xl mx-auto space-y-2">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200 inline-block">
+          Institutional Collaborations
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+          University &amp; Campus Tie-Ups
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm">
+          Empowering 113+ university campuses and engineering colleges nationwide with institutional MoUs, certified bootcamps, and accredited career centers.
+        </p>
+      </div>
+    </div>
+
+    <div class="relative w-full overflow-hidden marquee-container py-2">
+      <div class="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none"></div>
+      <div id="universities-marquee-track" class="animate-marquee-slow flex gap-5 items-center"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 mt-6 text-center">
+      <span class="text-xs font-semibold text-slate-500">
+        Are you a University Director or TPO looking for campus readiness partnerships?
+        <button
+          onclick="handleStudentEnrollAction('Campus Partnership / MoU')"
+          class="text-indigo-600 hover:text-indigo-800 font-bold underline underline-offset-4 ml-1 cursor-pointer"
+        >
+          Request Institutional MoU Details &rarr;
+        </button>
+      </span>
+    </div>
+  </section>
+
+  <!-- 8. CAMPUS TRANSFORMATION JOURNEY & REAL CLASSROOM SHOWCASE -->
+  <section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+          Campus Impact
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          The Transformation Journey
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Real scenes from our on-campus immersion camps, high-stakes mock corporate panels, and student placement breakthroughs.
+        </p>
+      </div>
+
+      <div id="gallery-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative">
+          <div class="flex items-center gap-1 text-amber-400 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+            "The corporate readiness bootcamp made the entire campus placement round effortless. I cleared Capgemini's technical and HR rounds without any nervousness."
+          </p>
+          <div class="mt-5 pt-4 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm">SS</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Souvik Sengupta</div>
+              <div class="text-[11px] text-slate-500">Placed at Capgemini • B.Tech CSE</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative">
+          <div class="flex items-center gap-1 text-amber-400 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+            "Their emphasis on executive presence and the STAR behavioral technique is pure gold. Success Scholar helped transform my hesitations into fluent interview delivery."
+          </p>
+          <div class="mt-5 pt-4 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-sm">RB</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Riya Banerjee</div>
+              <div class="text-[11px] text-slate-500">Placed at PwC • MBA Marketing</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 relative">
+          <div class="flex items-center gap-1 text-amber-400 mb-3">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+            "The ISO-certified curriculum was recognized immediately by the HR panel. The simulated boardroom cases gave me an immediate edge over other graduates."
+          </p>
+          <div class="mt-5 pt-4 border-t border-slate-200 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">AK</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Arjun Karmakar</div>
+              <div class="text-[11px] text-slate-500">Placed at Tata Tech • Mechanical Eng.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8B. DEDICATED PHOTO GALLERY SECTION (WITH PHOTO SLOTS, CATEGORY FILTER & LIGHTBOX) -->
+  <section id="gallery" class="py-20 bg-slate-100/70 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div class="space-y-2">
+          <span class="text-xs uppercase font-extrabold tracking-wider text-sky-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200 inline-block">
+            Moments &amp; Milestones
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+            Campus &amp; Training Photo Gallery
+          </h2>
+          <p class="text-slate-600 text-sm max-w-2xl">
+            Snapshots from our corporate readiness workshops, university MoU signings, mock interview drives, and student convocations.
+          </p>
+        </div>
+
+        <div id="photo-gallery-filters" class="flex flex-wrap items-center gap-2"></div>
+      </div>
+
+      <!-- Photo Cards Grid -->
+      <div id="photo-gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- Helper Note for Adding Custom Photos -->
+      <div class="mt-8 p-4 rounded-2xl bg-white border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
+        <div class="flex items-center gap-2.5">
+          <i data-lucide="camera" class="w-4 h-4 text-blue-600 shrink-0"></i>
+          <span>Keep your photo files (<code class="font-mono bg-slate-100 px-1.5 py-0.5 rounded">img1.jpg</code> – <code class="font-mono bg-slate-100 px-1.5 py-0.5 rounded">port-3.png</code>) in the same folder as <code class="font-mono bg-slate-100 px-1.5 py-0.5 rounded">index.html</code> and <code class="font-mono bg-slate-100 px-1.5 py-0.5 rounded">app.py</code>. Click any photo to expand.</span>
+        </div>
+        <button
+          onclick="openAuthModal('admin')"
+          class="px-3.5 py-2 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold border border-blue-200 transition whitespace-nowrap cursor-pointer"
+        >
+          Admin Portal
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. VISION, MISSION & VALUES -->
+  <section id="values" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Our Vision, Mission &amp; Values
+        </h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Dedicated to sculpting the corporate workforce of tomorrow through continuous learning, integrity, and ethical leadership.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
+              <i data-lucide="eye" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Our Vision</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              To empower ambitious young talent across diverse academic backgrounds to unlock their fullest potential by blending deep technical knowledge with essential human soft skills. We strive to nurture confidence, critical inquiry, and resilience to conquer volatile global corporate challenges.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-blue-700">
+            Target: 100,000 Trained by 2030
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6">
+              <i data-lucide="trending-up" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Our Mission</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              To equip learners with practical, industry-tested skills that stay resilient across shifting technological paradigms. Through transformative campus immersions, personalized mentoring, and corporate partnerships, we create day-one contributors who lead with empathy.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-emerald-700">
+            Action-Oriented Curriculums
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6">
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Our Core Values</h3>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-800">Stewardship:</strong> Fulfilling our responsibility to build a supportive, ethical learning ecosystem for every candidate.
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-800">Talent Development:</strong> Cultivating latent human potential through deliberate practice and actionable coaching.
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-800">Client Value Creation:</strong> Delivering quantifiable hiring and retention returns for both campuses and corporations.
+                </div>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-slate-800">Collaboration:</strong> Partnering closely with universities and recruiters to co-design future-proof learning paths.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-indigo-700">
+            Ethical &amp; Accountable
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. FREQUENTLY ASKED QUESTIONS -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center space-y-3 mb-12">
+        <span class="text-xs uppercase font-extrabold tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+          Got Questions?
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-slate-600 text-sm">
+          Everything you need to know about enrollments, batch scheduling, and career assistance.
+        </p>
+      </div>
+
+      <div id="faq-accordion-container" class="space-y-4"></div>
+
+      <div class="mt-10 p-6 rounded-2xl bg-blue-50 border border-blue-200 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-left">
+          <h4 class="font-bold text-slate-900 text-sm">Still have questions regarding your college placement drive?</h4>
+          <p class="text-xs text-slate-600">Speak directly with an academic advisor today.</p>
+        </div>
+        <a
+          href="tel:+918276040204"
+          class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-xs transition shrink-0"
+        >
+          Call +91 8276040204
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. REFINED CORPORATE FOOTER -->
+  <footer class="bg-slate-900 text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xl font-black tracking-tight text-white">SUCCESS SCHOLAR</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
+            Empowering students and graduates with vital soft skills, executive leadership traits, and real-world corporate readiness to help them excel in competitive global environments.
+          </p>
+          <div class="text-xs text-slate-400 flex items-center gap-2 pt-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+            <span>An ISO 9001:2015 Certified Educational Institution</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300">Quick Links</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#hero" class="hover:text-blue-400 transition">Home</a></li>
+            <li><a href="#cohort" class="hover:text-blue-400 transition">Internship 2026 Batch</a></li>
+            <li><a href="#courses" class="hover:text-blue-400 transition">Curriculum &amp; Courses</a></li>
+            <li><a href="#universities" class="hover:text-blue-400 transition">Campus Tie-Ups</a></li>
+            <li><a href="#gallery" class="hover:text-blue-400 transition">Photo Gallery</a></li>
+            <li><a href="#values" class="hover:text-blue-400 transition">Vision &amp; Core Values</a></li>
+            <li><a href="#faq" class="hover:text-blue-400 transition">FAQs &amp; Student Support</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300">Registered Office</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
+              <span>57/4N, Netaji Subhash Chandra Bose Rd, Nehru Colony, Ashok Nagar, Tollygunge, Kolkata, West Bengal 700040</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>+91 8276040204</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-sky-400 shrink-0"></i>
+              <span>info@successscholar.in</span>
+            </li>
+          </ul>
+
+          <div class="pt-3 flex items-center gap-3">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center text-white transition" title="LinkedIn">
+              <span class="font-bold text-xs">in</span>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noreferrer" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-emerald-600 flex items-center justify-center text-white transition" title="WhatsApp">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+            <button
+              onclick="openAuthModal('admin')"
+              class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold flex items-center gap-1.5 text-slate-300 transition cursor-pointer"
+            >
+              <i data-lucide="shield" class="w-3.5 h-3.5 text-blue-400"></i>
+              Admin Login
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          &copy; <span id="current-year"></span> Success Scholar. All Rights Reserved. ISO 9001:2015 Certified.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="px-3 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700 font-mono text-[11px]">
+            Total Verified Visitors: <strong id="footer-visitor-count" class="text-emerald-400">28,941</strong>
+          </span>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL 1: SYLLABUS VIEWER -->
+  <div id="syllabus-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeSyllabusModal()" class="absolute top-5 right-5 p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-2 mb-2">
+        <span id="modal-course-category" class="px-2.5 py-0.5 rounded bg-blue-50 text-blue-700 text-xs font-bold"></span>
+        <span id="modal-course-duration" class="text-xs text-slate-500"></span>
+      </div>
+
+      <h3 id="modal-course-title" class="text-2xl font-black text-slate-900"></h3>
+      <p id="modal-course-desc" class="text-xs text-slate-600 mt-2"></p>
+
+      <div class="mt-6 pt-4 border-t border-slate-100 space-y-3">
+        <h4 class="font-bold text-xs uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+          <i data-lucide="book-open" class="w-4 h-4 text-blue-600"></i>
+          Weekly Curriculum Breakdown
+        </h4>
+        <div id="modal-course-syllabus" class="space-y-2.5"></div>
+      </div>
+
+      <div class="mt-8 pt-4 border-t border-slate-100 flex gap-3">
+        <button onclick="closeSyllabusModal()" class="flex-1 py-2.5 text-xs font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-xl transition cursor-pointer">
+          Close
+        </button>
+        <button id="modal-course-enroll-btn" class="flex-1 py-2.5 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition shadow-md cursor-pointer">
+          Apply for this Course
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: SEPARATE STUDENT & ADMIN LOGIN / REGISTER MODAL -->
+  <div id="auth-modal" class="hidden fixed inset-0 z-50 bg-black/65 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
+      <button onclick="closeAuthModal()" class="absolute top-5 right-5 p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Role Switcher Tabs -->
+      <div class="grid grid-cols-2 gap-1.5 p-1 bg-slate-100 rounded-xl mb-5">
+        <button
+          id="tab-role-student"
+          onclick="switchAuthRole('student')"
+          class="py-2 text-xs font-bold rounded-lg transition cursor-pointer"
+        >
+          Student Portal
+        </button>
+        <button
+          id="tab-role-admin"
+          onclick="switchAuthRole('admin')"
+          class="py-2 text-xs font-bold rounded-lg transition cursor-pointer"
+        >
+          Admin Portal
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2.5 mb-2">
+        <div id="auth-role-icon-box" class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center">
+          <i data-lucide="user-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 id="auth-modal-title" class="text-xl font-black text-slate-900">Student Sign In</h3>
+          <p id="auth-modal-subtitle" class="text-xs text-slate-500">Enter your Student User ID &amp; Password to enroll</p>
+        </div>
+      </div>
+
+      <div id="auth-error-banner" class="hidden my-3 p-3 rounded-xl bg-red-50 border border-red-200 text-xs text-red-700 font-medium flex items-center gap-2">
+        <i data-lucide="alert-circle" class="w-4 h-4 shrink-0"></i>
+        <span id="auth-error-text"></span>
+      </div>
+
+      <form id="auth-form" onsubmit="handleAuthSubmit(event)" class="space-y-3.5 mt-4">
+        <div>
+          <label id="auth-userid-label" class="block text-xs font-bold text-slate-700 mb-1">Student User ID *</label>
+          <input
+            type="text"
+            id="auth-userid"
+            required
+            placeholder="Enter your User ID"
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono uppercase focus:ring-2 focus:ring-blue-500 outline-none"
+          />
+        </div>
+
+        <div id="auth-register-fields" class="hidden space-y-3.5">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
+            <input
+              type="text"
+              id="auth-fullname"
+              placeholder="e.g. Debjit Roy"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
+            <input
+              type="email"
+              id="auth-email"
+              placeholder="name@institution.edu.in"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+          </div>
+          <div id="admin-secret-field" class="hidden">
+            <label class="block text-xs font-bold text-slate-700 mb-1">Institution Admin Invite Code *</label>
+            <input
+              type="password"
+              id="auth-admin-secret"
+              placeholder="Enter institutional code"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-indigo-500 outline-none"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Password *</label>
+          <input
+            type="password"
+            id="auth-password"
+            required
+            placeholder="••••••••"
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none"
+          />
+        </div>
+
+        <button
+          type="submit"
+          id="auth-submit-btn"
+          class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer"
+        >
+          <span id="auth-submit-label">Verify &amp; Sign In</span>
+          <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </button>
+      </form>
+
+      <div id="student-register-toggle-box" class="mt-4 pt-3 border-t border-slate-100 text-center text-xs text-slate-600">
+        <span id="auth-toggle-prompt">First-time user?</span>
+        <button
+          type="button"
+          onclick="toggleStudentRegisterMode()"
+          id="auth-toggle-link"
+          class="text-blue-600 hover:text-blue-800 font-bold underline ml-1 cursor-pointer"
+        >
+          Register New ID
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: MULTI-STEP STUDENT ENROLLMENT MODAL -->
+  <div id="apply-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
+      <button onclick="resetApplyModal()" class="absolute top-5 right-5 p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Form View -->
+      <div id="apply-form-view">
+        <div class="flex items-center gap-2 mb-1">
+          <span id="apply-step-badge" class="w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center">1</span>
+          <span id="apply-step-label" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Step 1 of 2</span>
+        </div>
+        <h3 id="apply-modal-heading" class="text-2xl font-black text-slate-900">Personal Information</h3>
+        <p id="apply-modal-sub" class="text-xs text-slate-500 mb-6">Confirm your contact credentials to begin enrollment.</p>
+
+        <form onsubmit="handleApplySubmit(event)" class="space-y-4">
+          <div id="apply-step-1" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Full Legal Name *</label>
+              <input type="text" id="input-fullName" placeholder="e.g. Priyanshu Sharma" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none" />
+              <p id="err-fullName" class="hidden text-[11px] text-red-500 mt-1">Full name is required</p>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
+              <input type="email" id="input-email" placeholder="student@college.edu.in" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none" />
+              <p id="err-email" class="hidden text-[11px] text-red-500 mt-1">Valid email is required</p>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">WhatsApp / Phone *</label>
+              <input type="tel" id="input-phone" placeholder="+91 98765 43210" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none" />
+              <p id="err-phone" class="hidden text-[11px] text-red-500 mt-1">Valid 10-digit mobile number required</p>
+            </div>
+          </div>
+
+          <div id="apply-step-2" class="hidden space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">College / University Name</label>
+              <input type="text" id="input-college" placeholder="e.g. Heritage Institute of Technology" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 outline-none" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Degree</label>
+                <select id="input-degree" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs bg-white outline-none">
+                  <option>B.Tech / B.E.</option>
+                  <option>BCA / MCA</option>
+                  <option>BBA / MBA</option>
+                  <option>B.Sc / M.Sc</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Passing Year</label>
+                <select id="input-graduationYear" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs bg-white outline-none">
+                  <option>2025</option>
+                  <option selected>2026</option>
+                  <option>2027</option>
+                  <option>2028</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Interested Specialization Track</label>
+              <select id="input-interestTrack" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs bg-white outline-none font-medium text-slate-800">
+                <option>Internship 2026 Immersion</option>
+                <option>Personality Development</option>
+                <option>POSH Training</option>
+                <option>Competitive Aptitude</option>
+                <option>Sales Marketing &amp; Branding</option>
+                <option>Leadership Training</option>
+                <option>Group Discussion &amp; Personal Interview</option>
+                <option>Spoken English &amp; Language Skill</option>
+                <option>Corporate Training</option>
+                <option>C2C (Campus to Corporate)</option>
+                <option>NLP Fundamentals</option>
+                <option>Film Making</option>
+                <option>Soft Skills Mastery</option>
+                <option>Advanced Corporate Communication</option>
+                <option>Campus Partnership / MoU</option>
+                <option>Kolkata Central Campus Offline Batch</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <p id="apply-submit-error" class="hidden text-xs font-semibold text-red-600 bg-red-50 border border-red-200 p-2.5 rounded-xl"></p>
+          </div>
+
+          <div class="pt-4 flex gap-3">
+            <button type="button" id="apply-back-btn" onclick="goBackApplyStep()" class="hidden w-1/3 py-2.5 text-xs font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-xl transition cursor-pointer">
+              Back
+            </button>
+            <button type="submit" class="flex-1 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer">
+              <span id="apply-next-label">Continue to Track Selection</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success View -->
+      <div id="apply-success-view" class="hidden text-center py-6 space-y-4">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto">
+          <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900">Application Submitted!</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Thank you, <strong id="success-applicant-name" class="text-slate-800"></strong>. Your profile has been saved to the Success Scholar database for <strong id="success-track-name"></strong>.
+        </p>
+        <div id="success-assigned-id" class="p-3 bg-slate-50 rounded-xl text-xs text-slate-500 font-mono"></div>
+        <div class="flex gap-2 pt-2">
+          <button onclick="resetApplyModal(); openStudentApplicationsModal();" class="flex-1 py-2.5 text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-xl border border-blue-200 transition cursor-pointer">
+            View My Status
+          </button>
+          <button onclick="resetApplyModal()" class="flex-1 py-2.5 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 rounded-xl transition cursor-pointer">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: STUDENT READ-ONLY APPLICATIONS MODAL -->
+  <div id="student-apps-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[85vh] flex flex-col">
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div class="flex items-center gap-2.5">
+          <div class="p-2 bg-blue-600 text-white rounded-xl">
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-lg">My Enrollment Applications</h3>
+            <p class="text-xs text-slate-500">Read-only status tracker (Status updates are managed exclusively by Administrators)</p>
+          </div>
+        </div>
+        <button onclick="closeStudentApplicationsModal()" class="p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div id="student-apps-list" class="overflow-y-auto flex-1 py-4 space-y-3"></div>
+
+      <div class="pt-3 border-t border-slate-200 flex justify-between items-center">
+        <button onclick="closeStudentApplicationsModal(); openApplyModal('Campus-to-Corporate Readiness');" class="px-4 py-2 bg-blue-600 text-white font-bold rounded-lg text-xs cursor-pointer">
+          + New Course Enrollment
+        </button>
+        <button onclick="closeStudentApplicationsModal()" class="px-4 py-2 bg-slate-900 text-white font-bold rounded-lg text-xs cursor-pointer">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 5: ADMIN MANAGEMENT PORTAL (ADMIN-ONLY STATUS TOGGLING, DELETE, EXPORT & COURSE CREATOR) -->
+  <div id="admin-modal" class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6">
+    <div class="bg-white rounded-3xl max-w-4xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] flex flex-col">
+
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div class="flex items-center gap-2.5">
+          <div class="p-2 bg-indigo-600 text-white rounded-xl">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-lg">Admin Management Portal</h3>
+            <p class="text-xs text-slate-500">Authenticated Administrator Control • Approve, manage, export &amp; publish programs</p>
+          </div>
+        </div>
+        <button onclick="closeAdminModal()" class="p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="grid grid-cols-3 gap-3 my-4">
+        <div class="p-3 rounded-xl bg-blue-50 border border-blue-100">
+          <span class="text-[10px] font-bold text-blue-700 uppercase">Total Submissions</span>
+          <div id="admin-metric-total" class="text-xl font-black text-blue-900">0</div>
+        </div>
+        <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-100">
+          <span class="text-[10px] font-bold text-emerald-700 uppercase">Admitted Cohorts</span>
+          <div id="admin-metric-admitted" class="text-xl font-black text-emerald-900">0</div>
+        </div>
+        <div class="p-3 rounded-xl bg-amber-50 border border-amber-100">
+          <span class="text-[10px] font-bold text-amber-700 uppercase">Pending Review</span>
+          <div id="admin-metric-pending" class="text-xl font-black text-amber-900">0</div>
+        </div>
+      </div>
+
+      <!-- Filter / Search within Admin + CSV Export & Add Course -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 mb-3">
+        <div class="relative flex-1">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input
+            type="text"
+            id="admin-search-input"
+            oninput="renderAdminTable()"
+            placeholder="Search applicants by name, college, or track..."
+            class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-xs outline-none focus:ring-1 focus:ring-blue-500"
+          />
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <button
+            onclick="toggleAdminCourseForm()"
+            class="px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer"
+          >
+            <i data-lucide="plus-circle" class="w-3.5 h-3.5"></i>
+            <span>New Course</span>
+          </button>
+          <button
+            onclick="exportApplicationsCSV()"
+            class="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer"
+          >
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Export CSV</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Collapsible Admin Course Creator -->
+      <div id="admin-new-course-box" class="hidden mb-4 p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
+        <div class="flex items-center justify-between">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-slate-800">Publish New Training Program</h4>
+          <button onclick="toggleAdminCourseForm()" class="text-xs text-slate-500 hover:text-slate-800 cursor-pointer">Cancel</button>
+        </div>
+        <form onsubmit="handleCreateCourse(event)" class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+          <input type="text" id="new-course-title" required placeholder="Course Title (e.g. AI Prompting)" class="px-3 py-2 rounded-lg border border-slate-300 bg-white outline-none" />
+          <select id="new-course-category" class="px-3 py-2 rounded-lg border border-slate-300 bg-white outline-none">
+            <option>Soft Skills</option>
+            <option>Interview Prep</option>
+            <option>Campus Readiness</option>
+            <option>Leadership</option>
+            <option>Spoken English</option>
+            <option>Corporate &amp; Legal</option>
+            <option>Aptitude &amp; Sales</option>
+            <option>Creative &amp; NLP</option>
+          </select>
+          <input type="text" id="new-course-duration" required placeholder="Duration (e.g. 4 Weeks)" class="px-3 py-2 rounded-lg border border-slate-300 bg-white outline-none" />
+          <input type="text" id="new-course-desc" required placeholder="Short program summary..." class="sm:col-span-3 px-3 py-2 rounded-lg border border-slate-300 bg-white outline-none" />
+          <input type="text" id="new-course-w1" required placeholder="Week 1 Syllabus Topic" class="px-3 py-2 rounded-lg border border-slate-300 bg-white outline-none" />
+          <input type="text" id="new-course-w2" required placeholder="Week 2 Syllabus Topic" class="px-3 py-2 rounded-lg border border-slate-300 bg-white outline-none" />
+          <button type="submit" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg transition cursor-pointer">
+            Publish Live
+          </button>
+        </form>
+      </div>
+
+      <!-- Applicants Table -->
+      <div class="overflow-x-auto flex-1 border border-slate-200 rounded-xl">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-100 text-slate-600 font-bold border-b border-slate-200 uppercase tracking-wider text-[10px]">
+            <tr>
+              <th class="p-3">Applicant</th>
+              <th class="p-3">College</th>
+              <th class="p-3">Track</th>
+              <th class="p-3">Status</th>
+              <th class="p-3">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="admin-table-body" class="divide-y divide-slate-100"></tbody>
+        </table>
+      </div>
+
+      <div class="mt-4 pt-3 border-t border-slate-200 flex justify-between items-center text-xs text-slate-500">
+        <span>Authenticated Admin Session • FastAPI + SQLite Persistence</span>
+        <button onclick="closeAdminModal()" class="px-4 py-2 bg-slate-900 text-white font-bold rounded-lg text-xs cursor-pointer">
+          Close Portal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 6: FULL-SCREEN PHOTO GALLERY LIGHTBOX -->
+  <div id="gallery-lightbox-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative">
+      <button onclick="closeGalleryLightbox()" class="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 hover:bg-black/70 text-white transition cursor-pointer">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="lightbox-media-box" class="w-full h-72 sm:h-96 bg-slate-900 flex items-center justify-center overflow-hidden"></div>
+      <div class="p-6">
+        <div class="flex items-center justify-between gap-2 mb-1.5">
+          <span id="lightbox-category" class="px-2.5 py-0.5 rounded bg-blue-50 text-blue-700 text-xs font-bold"></span>
+          <span id="lightbox-date" class="text-xs text-slate-500"></span>
+        </div>
+        <h3 id="lightbox-title" class="text-xl font-black text-slate-900"></h3>
+        <p id="lightbox-caption" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VANILLA JAVASCRIPT APPLICATION LOGIC -->
+  <script>
+    // --- 0. HERO COVER IMAGE, ACCREDITATION LOGOS & 3 SOCIAL BUTTONS CONFIG ---
+    // Replace any empty string ('') below with your local filename (e.g. 'student.png') or full image URL
+    const HERO_COVER_ASSETS = {
+      studentPhotoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGeh1MaWy6xMiiMJFJhUqSPZeKvRfDJW6hZFpD2epBg&s=10', // Paste student portrait image URL or filename (e.g. 'student.png')
+      isoLogoUrl: 'https://img.magnific.com/premium-vector/logo-event-that-says-biotic-company_1090394-157602.jpg?semt=ais_hybrid&w=740&q=80',      // Paste ISO 9001:2015 Certified logo URL or filename (e.g. 'iso.png')
+      egacLogoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanZPdHnj-CqDyN5RMLS_ZoQVv6Zi_L9BDl4blgd0-IEskiQkb34KvbWQ&s=10',     // Paste EGAC Accredited logo URL or filename (e.g. 'egac.png')
+      msmeLogoUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xABQEAACAQMCAwQEBwoKCAcAAAABAgMABBEFEgYhMQcTQVEUImFxFRcjMoGRoTdCVXSUsbLC0vAWNTZDUnN1krPRCDNTYpXB4fEkJURkcoST/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAEDBAIF/8QAJBEBAAICAgICAQUAAAAAAAAAAAECAxESIQQxQVETIiNhofD/2gAMAwEAAhEDEQA/AO40pSgUpSgUpSgV5JxXi5mW3geV87UUscVWprtNQurd7qIyxTHEUO5tq45HIwAT4/R9NU5csU6d1pNk5ql61lAsiRCR3cIqltozz6nB8qjI9avpV7yKyR4+fTeft21ESyyCzieWeSeEIzLFM2wryGCGHXln7awG5f0m6aAFEuR3YJfDEg8yfBjjlyxyrHk8m3LqdNFcMaWjSNXN/O0UkSxsF3Lgk558xzA5jl9dS2aplnJJHcwSwhbfu3MbyOxKtlWJG3qQNqY8eVbkl27pGbe7mN+8jYZzsQAE4DKTgAge/wAatxeRPH9XtXfH30tFK0tPvlvO9UKUeJtjqSDg+8Vu1siYmNwpmNdSUpSpQUpSgUpSgUpSgUpSgUpSg0dYtprmzK2zhZVYMu7oSPA/vyODVPaWTuVikk9dpSyKGZiAARgqc45+fXn7KvrdKp2vMr6xLGkYBUKoxgbiQCSfoxzIPT2GsHmU1q+/4acFvhGzsljdRSd4yxf6mRAucBgQfeRy8PEdep8xSpGgBskulkOe8jmVd643YYYODyPlzzWtLc97c74yCyqxVlO3HUdT05BeX5qyyJEI4t7Wo2llTEWUlxywW+9GM49vrGvM5bmdNc11rb3G5jhMbSsZbd9zxocouWxgY68vb41nilaO62xbe93MAvd7gSffyHUcgPD3VGl0A3BN3fRASYHiSMZA+k+H5jW9Ayy3sJdQXV1EuR6sik7c+/pn2j3UraZnUJtXULHw0l1K/pMmxImQj1TnvDnOR/ug5x76sNeVVUUKigAcgBXqvexU4V08y9uU7KUpVjkpSlApSlApSlApSlApSlB8NVDjCzkhuk1CL5rKEY/0GHQ/Vy+zxq4VH64ivpdx3ihlC7iCOoByfzVR5OOMmOYWYr8bxLnTQvHFHKI2EMyMI+WAxAI8ufXr7TXtmlkUqXEiYIC4AQjkT7jkgZHTFW8z4u9E6fNCOP8A5ISP0a07u2065inkaBYhHKqMRyA9Z1/5k/VXk28Xrqf9rbbGffuFajYZ3MT8jGvcuAeZ3cj5Y65+ypfhy0a81WPC/I257xgR83yH1/YPbU2sEF7qJieNSoszHKuOmdpH5zWfhW2SDTnKc98hJY9TgAf8sVbh8X9yO+nOTPuk/abpSlewwFKUoFKUoFKUoFKUoFKUoFKUoFRmu3dvb6fOk8qKXjIClsEg8uX11JN0qiSXV7qt3d6hY7Ujt9oCzE8wPZ05dfprN5OXhXUe5W4qcp39Nu4vI59eRo2+St+7dV/pE45fQufrr0ZLafRNZuJVZY5LjJVhgr83Ax76jb3SNWsT3sl1A0rtkBWbIJ6npy61kSCSO2mtZrpSs7BnVlHUY9+OgrzoyXi0xaPv+46auFZiOMtzT7iK21xGWYMbvETjPQhMAj6U+2p3RLi3e17mB0JjdxtB59SQce4g1TX06/cl1nRmVwEPRlbIwT5fv1zWWS41W31CG5niDBmEm63PJxyBx9HLH/eusPkWx+69IyYov6l0GlY4JkniSWJgyOMqR4islewwlKUoFKUoFKUoFKUoFKUoFKUoMdwrNA6xttYqQG8j51S+Gpd9zdvHBI4mVY+6yAAFADH9+tXc9Krms8Pk7rrRwLe837jhyobPX2Vk8ml5mt6/HwuxWjU1n5aGr3Lw3VujJJHbBcOk/NkJyBzJIKnPWvEtqskkzqiMrbTuYesvMch5eNa8ug6/c4F2d64x/rueOuKzJw/qsS7IpZVTwCuOXX/erBMZLWmeE6aYilY1yhjkuE+GLWCM4Kh+8IyBggdefsP2VJS31rbwymUPvZmPdMowo5bcfQB9VRLcM6vG263HrH5zNIAeRyOh9lTOg8PPCveaviaVWBjQuWCAZxn6zXWKuaZmOOtoyTj1vaV4et5bXRrSC4YtKsYznw9n0dKkq+YFfa9aleNYr9MUzudlKUrpBSlKBSlKBSlKBSudcd9qNvwxqj6XZ2JvbyJQ0xaXYkZIBAzgknBB6eIrV4q7T7zQ7DQriLS4Jm1Oz9JZWmKiM+ryBxz+dQdPpXMY+068bgWbiM6XB3sd6LYQd820ggc92Pb5VPdn/HdrxlFcols9rd220yxM24FWzhlPiORoLea1NQinlRfRpCjDOcHGeX+dc44r7X4tJ1W407StM9Ma2fZJNLNsQsOoXAJODyyccxUF8d+peOg2f5S37NRMbjSY97dbks7wsNl0+3J5bug/fFfLayu4ZIczkxKx3pu6jnj9X7a5L8eGpfgGz/Km/Zq69n3HknFNlqt3qNpDYxaftLFJC4KlWJJyB0xXH4q7265StNxbXclwzR3BSMjkATyOPL34rzbWlylzHLNMzY3BvW6jnjPnyxVC4f7Wfh/iux0m00kxWt1IyiaaX5QAIzZ2gYHzfOojWO2fUNO1G/tV0S1dbWaSIMbhgW2sRnG32U/HHtHKXaKVzbjLtPk4W4lGmPpYubcQRytIs21/WzyAIx4edWm54t0u34SHE7SOdPaESrhfWbcQAuPPJxVjlYKVxS47cLzvW9G0GDu88u9uju+nC1j+PDU/wDZ/lTfs0Hb6Vw89uOpgE/AVpy/9y37Ndl0i7a/0u0vHUI08KSFQcgZAOKDbpSlApSlB+Yu1L7oWu/10f+ElSPaX/E/BX9kn9So7tS+6Frv9dH/hJUj2l/xPwV/ZB/Uol6h+4tdf2wv5hUr/AKP/APKLU+f/AKJf06ioPuLXX9sL+YVK/wCj/wDyi1P8SX9Og86gnZR8IXfpTawLjv5O+wZcb9x3dPbmsAj7Iv6esfXNU3xzwPoOs6pLqGj8RaZY3Mz5uIZ5lKFvFhg5B8x+aqx8WjeHFvD3/wC5ohJ2tl2Q3Eyxel6hDu+/nlmRR7yelXp+F9E4b4H4gk0Au0N5ZO5czmUNhGwQfpNcx+LV/Divh0//AGT/AJVd+HNKn0Ps44k0+bVrDUYkhleL0OXeIgyHIPlkgn6TQc27L/ug6F/XP/hPULxb/H2ufjlx+m1TPZf90HQv69/8J6huLf4+1z8cuP02olbO2r+XTfiMH61XLRxoJ7FtLHFLzLppkIYwbt27vn2/N59apvbT/LpvxGD9arTb6TJrXYdpVnFdWlsxn395dy92nKZzjPnRCH9H7If9vqv96b/Kno/ZD/t9V/vTf5VDfF3efh/h3/iH/SvnxeXn4f4d/wCIf9KDoWg9m/AfEGlx6jpiag9rKWVWa5kUkqxU8j7Qa6XY2sdlZw2sGe6hQRpk5OAMCqb2dyafw3wna6XqGs6U1xC8rMYbtWXDSMw5nHgau8UiSxrJGwdGGVZTkEeYoPVKUoFKUoOB9oPA/E2p8Z6tfafpLT2txIjRyC4iUMBGq9GcEcwfCr63Z/puvaFoMevm4hu7CyWApDOo2nA3A8jnmK0OJNC4NueKbtNT02/e/llg7ySO6dUcy5AIAYfN2jPLxHXNRb8NcDLZNe/Ampi2BhUStqJRd8gQ7SWkAGO8HM8uRxmgkuLuBfQuApdF4Vimu3e9Sfu5Z03eR5nA8K0uxzhfW+Htbv7jWbA2kUtsI0Zpo23Hdn71jWxpPBfA+p3q20Wk6lGHTfG8t5KNxCozLjfkEd4vUeflWDU+FeBNMu72CfSdSYWjQLI63z/zrKoIG/O31+uMeqw8KCi3/ZzxbJfXUkeiMyvPIysLmDmCxI6v5Vg+LbjD8BP+Uwft1e/4O8AGLvRpWqbNt22fTJP5gnP3/wB8FYr7FOcVPW/ZpwZPeXNqtheBrcIWY3suDuBIx63soOUR9mnF7uFOibAfvnuYMD6nrqHDHBFzw9wDrVgXin1TUYpCyRMNoOwqignH1nHM1HDhXgI8NXOvfBmoG1gfayreyFj6wUkevjkT9h8qwycO8ApJKvwTqB7oXDE/CDjcIeZKgyZbI6Y8OuKJQnZ/wPxNpnGek32o6S0Frbys0khuIm2gxsOgYnqRV6v+yXhfULq5uZ577vLiR5H23CgZYknHq+2oiLhDgdphBJo2pxTBijo165KMN5wcOR0jzy/pD24xWHDPAN7qdtp8elams087QruvJMDEIl3fP+bghff9dENDtU4O4g1vi5r3SdONzam1ij7xZ4l9Zd2eTMD4irNYcH3Oo9ktvw1qO2yv1DOAzK/duJmdc4JBBHXHnUL/AAe7Pw0ayaXfr3k08Mf/AJg5y0RAYHD+rnPIHBr7/BfgpLiKCfQ9SieVrkKH1I/zBAfHynPm3IDyNBSLnsw4ugkKLpKTgffw3UO0/wB5gfsrF8W3F/4Cf8pt/wBurxHoPAMgtT8EaiBcbwuNRZh6u3piQ7vnD5ucYOcYNF0DgN7AXa6PqRG0tgagxGAYx8/vNuPlRk5wMMDzFBRj2bcXkEHQW5jxubf9uv0dw/BJbaFp9vOmyWK2jR1znBCgEVy+fhfgaL0oHRtRY280cDKNROdzruGflPV8huxk4AzXW7aFLeCOGPOyNQignOABgUGWlKUClKUERecN6ZeammpTwsbpAArhyMesjdPfGv2+ZrFDwnpMJAWKUoO7xE8zMnqBQDtJxkhFz549pzOUoKfFbaBp2orb281/FeL3cYJMr7fmjqcjLCAAnxA9vPDLccJa1ML1prq5F7tVCBMU5vGnqjHq5ZEB6cxnxJqS1zhv0y7W9sVt0uWkVpu9Xk+EdRzHPOGwefQewVni4Y09IIh3Xy8Tq6TNhpFw4cLuIyVBAGPKg0r7hPh21tu8uLaUIi7A4dyY1IYHB8AQ7A++sVvfaBaTzTel37s0MiyiQSurpFyYkY5ld374qw3WnC905LW7ld2XY3fKArb0IYNjpncAcYx4dKiNQ4Us30qWys7dUDLKigSmPu0kxvC7Rj70ciCOVB4GjaDpGmyK0Vz6PfzQ94G7x2dxtEYI6j5qj6OdR9ha8NXDWdjp3pWy6tmQRh5VDwGNRk5HMYCdcdc1Z2sGvdKS11TY0pRS7RZAVxghl8Rg8x7qw2ehW1vdW97jF3FHsdo/USQ7VUsUHIHCKBjoBighdTtOHNPaW2vZL6OQBXaYGZm9Yu27eM9cuPdy8K+2ycM2usW9zbw3K3rgNCRDNzG1wMDHlu+qp2/0LT7+4W4ntkM427pQAGZRuwpPl6zfXWAcMaWs8M0duyvE+4/KMRJhGQBgSdwCuQM9KCLstN4c1uxk7n0q4t4ZO92yGQbGcpONoPPqEbA88eOK+XUnDvePI73qNCsrOI1l9Zbg7mGAPW3FOQHlyqf0zSbTSu/WwiEMczKxjUAKm1FQBR4DCitJOFtNRZVWOQI5jKqG5R92zMgX2AseueXLoAKCOtJeG45v/Drchpg8Cr3MuBudY3AyOXrqAfbk+JqSPCumEHYLiLIwDHOylfmZxg8s92ufPn5mvsHDGmwRxBYi0kUplSdzulyZTKRuPPG4nl5VNAYFBBycJ6ZJay2hN0LeUjMS3LhQNmwgc+hXkfr686nFAUYHSvhODXw7/D89B7pXkBvHFfKD3SlKBSlKBSlKBSlKBSlKBSlKBSlKBSlKDHj1hWSlKBSlKD//2Q==',     // Paste MSME logo URL or filename (e.g. 'msme.png')
+      iafLogoUrl: 'data:image/jpeg;base64,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'       // Paste IAF logo URL or filename (e.g. 'iaf.png')
+    };
+
+    // 3 Small Social Buttons: Replace `logoUrl` with your custom icon and `profileUrl` with your profile link
+    const HERO_SOCIAL_BUTTONS = [
+      { name: 'Facebook', logoUrl: '', profileUrl: 'https://www.facebook.com' },
+      { name: 'LinkedIn', logoUrl: '', profileUrl: 'https://www.linkedin.com' },
+      { name: 'WhatsApp', logoUrl: '', profileUrl: 'https://wa.me/918276040204' }
+    ];
+
+    function initHeroCoverAssets() {
+      const mapping = [
+        { id: 'hero-student-image', url: HERO_COVER_ASSETS.studentPhotoUrl },
+        { id: 'hero-iso-logo', url: HERO_COVER_ASSETS.isoLogoUrl },
+        { id: 'hero-egac-logo', url: HERO_COVER_ASSETS.egacLogoUrl },
+        { id: 'hero-msme-logo', url: HERO_COVER_ASSETS.msmeLogoUrl },
+        { id: 'hero-iaf-logo', url: HERO_COVER_ASSETS.iafLogoUrl }
+      ];
+      mapping.forEach(item => {
+        const el = document.getElementById(item.id);
+        if (el && item.url) {
+          el.src = item.url;
+        }
+      });
+
+      HERO_SOCIAL_BUTTONS.forEach((btn, idx) => {
+        const imgEl = document.getElementById(`social-btn-logo-${idx}`);
+        if (imgEl && btn.logoUrl) {
+          imgEl.src = btn.logoUrl;
+        }
+      });
+    }
+
+    function openSocialProfile(event, index) {
+      event.preventDefault();
+      const target = HERO_SOCIAL_BUTTONS[index];
+      if (target && target.profileUrl) {
+        window.open(target.profileUrl, '_blank', 'noopener,noreferrer');
+      }
+    }
+
+    // --- 1. DATA STORES ---
+    let coursesList = [
+      {
+        id: 'cs-1',
+        title: 'Personality Development',
+        category: 'Soft Skills',
+        level: 'All Levels',
+        duration: '4 Weeks',
+        badge: 'Popular',
+        rating: 4.9,
+        description: 'Enhancing self-awareness, confidence, and positive attitude for an impactful professional presence across corporate environments.',
+        syllabus: [
+          { week: 'Week 1', topic: 'Self-Awareness, Confidence Building & Growth Mindset' },
+          { week: 'Week 2', topic: 'Body Language, Grooming & Executive Presence' },
+          { week: 'Week 3', topic: 'Emotional Intelligence & Stress Resilience' },
+          { week: 'Week 4', topic: 'Personal Branding & Impactful Workplace Attitude' }
+        ]
+      },
+      {
+        id: 'cs-2',
+        title: 'POSH Training',
+        category: 'Corporate & Legal',
+        level: 'All Levels',
+        duration: '2 Weeks',
+        badge: 'Compliance',
+        rating: 5.0,
+        description: 'Educates employees and campus cohorts on legal compliance, prevention, prohibition, and redressal of sexual harassment at the workplace.',
+        syllabus: [
+          { week: 'Week 1', topic: 'POSH Act 2013 Legal Framework & Workplace Boundaries' },
+          { week: 'Week 2', topic: 'Internal Complaints Committee (ICC) Procedures & Case Studies' }
+        ]
+      },
+      {
+        id: 'cs-3',
+        title: 'Competitive Aptitude',
+        category: 'Aptitude & Sales',
+        level: 'Intermediate',
+        duration: '6 Weeks',
+        badge: 'Placement Core',
+        rating: 4.9,
+        description: 'Sharpening numerical, logical reasoning, data interpretation, and verbal skills for competitive exams and campus placements.',
+        syllabus: [
+          { week: 'Week 1-2', topic: 'Quantitative Aptitude, Speed Math & Number Systems' },
+          { week: 'Week 3-4', topic: 'Logical Reasoning, Analytical Puzzles & Data Sufficiency' },
+          { week: 'Week 5-6', topic: 'Verbal Ability, Reading Comprehension & Timed Mock Tests' }
+        ]
+      },
+      {
+        id: 'cs-4',
+        title: 'Sales Marketing & Branding',
+        category: 'Aptitude & Sales',
+        level: 'Intermediate',
+        duration: '5 Weeks',
+        badge: 'Commercial',
+        rating: 4.8,
+        description: 'Learn to identify target audiences, develop marketing strategies, drive consultative B2B/B2C sales, and build a lasting brand.',
+        syllabus: [
+          { week: 'Week 1', topic: 'Market Segmentation, Buyer Personas & Value Proposition' },
+          { week: 'Week 2-3', topic: 'Consultative Selling, Objection Handling & Closing Deals' },
+          { week: 'Week 4-5', topic: 'Brand Positioning, Digital Campaigns & Growth Funnels' }
+        ]
+      },
+      {
+        id: 'cs-5',
+        title: 'Leadership Training',
+        category: 'Leadership',
+        level: 'Intermediate',
+        duration: '4 Weeks',
+        badge: 'Executive',
+        rating: 4.9,
+        description: 'Develop future leaders with strategic thinking, decision-making, team motivation, and constructive conflict resolution skills.',
+        syllabus: [
+          { week: 'Week 1', topic: 'Strategic Thinking & Data-Backed Decision Making' },
+          { week: 'Week 2', topic: 'Team Motivation, Delegation & Accountability' },
+          { week: 'Week 3', topic: 'Conflict Resolution & High-Stakes Negotiation' },
+          { week: 'Week 4', topic: 'Leading Cross-Functional Teams Through Change' }
+        ]
+      },
+      {
+        id: 'cs-6',
+        title: 'Group Discussion & Personal Interview',
+        category: 'Interview Prep',
+        level: 'Advanced',
+        duration: '6 Weeks',
+        badge: 'High Placement',
+        rating: 5.0,
+        description: 'Techniques for communication, persuasive arguments, and structured responses in high-pressure Group Discussions and Personal Interviews.',
+        syllabus: [
+          { week: 'Week 1-2', topic: 'GD Entry/Exit Tactics, Persuasive Arguments & Moderation' },
+          { week: 'Week 3-4', topic: 'STAR Methodology & Behavioral HR Round Deconstruction' },
+          { week: 'Week 5-6', topic: 'Live Mock Corporate Panels & Personalized Feedback Scorecards' }
+        ]
+      },
+      {
+        id: 'cs-7',
+        title: 'Spoken English & Language Skill',
+        category: 'Spoken English',
+        level: 'Beginner to Intermediate',
+        duration: '8 Weeks',
+        badge: 'Foundational',
+        rating: 4.8,
+        description: 'Improve fluency, active business vocabulary, neutral pronunciation, and overall communication effectiveness in global workplaces.',
+        syllabus: [
+          { week: 'Week 1-2', topic: 'Phonetics, Neutral Pronunciation & Vocal Clarity' },
+          { week: 'Week 3-4', topic: 'Business Vocabulary, Idioms & Grammar Precision' },
+          { week: 'Week 5-6', topic: 'Extempore Speaking & Overcoming Stage Hesitation' },
+          { week: 'Week 7-8', topic: 'Live Debates, Town Hall Simulations & Q&A Fluency' }
+        ]
+      },
+      {
+        id: 'cs-8',
+        title: 'Corporate Training',
+        category: 'Corporate & Legal',
+        level: 'All Levels',
+        duration: '4 Weeks',
+        badge: 'Enterprise',
+        rating: 4.9,
+        description: 'Align employee skills with organizational goals, professional ethics, cross-functional teamwork, and modern business etiquette.',
+        syllabus: [
+          { week: 'Week 1', topic: 'Organizational Goal Alignment & KPI Ownership' },
+          { week: 'Week 2', topic: 'Workplace Ethics, Integrity & Governance Standards' },
+          { week: 'Week 3', topic: 'Agile Teamwork & Cross-Department Collaboration' },
+          { week: 'Week 4', topic: 'Business Etiquette, Client Dining & Executive Comms' }
+        ]
+      },
+      {
+        id: 'cs-9',
+        title: 'C2C (Campus to Corporate)',
+        category: 'Campus Readiness',
+        level: 'Beginner',
+        duration: '6 Weeks',
+        badge: 'Flagship',
+        rating: 4.95,
+        description: 'Prepare students for the professional corporate world with ATS-ready resume building, LinkedIn optimization, and workplace decorum.',
+        syllabus: [
+          { week: 'Week 1-2', topic: 'ATS Resume Building, Cover Letters & Portfolio Structuring' },
+          { week: 'Week 3-4', topic: 'Workplace Decorum, Email Diplomacy & Corporate Hierarchy' },
+          { week: 'Week 5-6', topic: 'Capstone Corporate Simulation & Recruiter Readiness Audit' }
+        ]
+      },
+      {
+        id: 'cs-10',
+        title: 'NLP Fundamentals',
+        category: 'Creative & NLP',
+        level: 'All Levels',
+        duration: '4 Weeks',
+        badge: 'Mindset',
+        rating: 4.85,
+        description: 'Learn basic Neuro-Linguistic Programming (NLP) principles to improve interpersonal communication, rapport building, and achieve personal goals.',
+        syllabus: [
+          { week: 'Week 1', topic: 'Foundations of Neuro-Linguistic Programming & Representational Systems' },
+          { week: 'Week 2', topic: 'Calibration, Mirroring & Deep Rapport Building' },
+          { week: 'Week 3', topic: 'Reframing Limiting Beliefs & Anchoring Peak Confidence' },
+          { week: 'Week 4', topic: 'Goal Setting Frameworks & Persuasive Language Patterns' }
+        ]
+      },
+      {
+        id: 'cs-11',
+        title: 'Film Making',
+        category: 'Creative & NLP',
+        level: 'Beginner to Intermediate',
+        duration: '6 Weeks',
+        badge: 'Creative Studio',
+        rating: 4.9,
+        description: 'Practical introduction to scriptwriting, cinematography, directing, visual storytelling, and digital post-production techniques.',
+        syllabus: [
+          { week: 'Week 1-2', topic: 'Screenplay Structure, Storyboarding & Visual Scriptwriting' },
+          { week: 'Week 3-4', topic: 'Camera Framing, Lighting Setups & On-Set Directing' },
+          { week: 'Week 5-6', topic: 'Non-Linear Video Editing, Sound Design & Color Grading' }
+        ]
+      },
+      {
+        id: 'cs-12',
+        title: 'Soft Skills Mastery',
+        category: 'Soft Skills',
+        level: 'All Levels',
+        duration: '4 Weeks',
+        badge: 'Bestseller',
+        rating: 4.9,
+        description: 'Master interpersonal finesse, emotional intelligence, active listening, and workplace etiquette demanded by Fortune 500 firms.',
+        syllabus: [
+          { week: 'Week 1', topic: 'Professional Etiquette & Executive Presence' },
+          { week: 'Week 2', topic: 'Conflict Resolution & Active Empathetic Listening' },
+          { week: 'Week 3', topic: 'High-Impact Cross-Functional Collaboration' },
+          { week: 'Week 4', topic: 'Corporate Presentation & Persuasive Storytelling' }
+        ]
+      }
+    ];
+
+    const RECRUITERS = [
+      { id: 'rec-1', name: 'PwC', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpwT0o7TDKO15zkDOjCuvG513Bjz46XCYBMk17JXhQZA&s=10', initials: 'PwC', sector: 'Consulting & Tax', color: 'from-amber-500/20 to-orange-500/10 text-amber-700' },
+      { id: 'rec-2', name: 'Capgemini', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiT6sXwBDtDmElOXvyQV0dFDo8heJPLy0gfIBqKvm8vg&s=10', initials: 'CAP', sector: 'IT & Consulting', color: 'from-blue-600/20 to-cyan-500/10 text-blue-700' },
+      { id: 'rec-3', name: 'Infosys', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQogKSTXw4A8JLB6107KPReEnNM4sxYBNncZNhJWedCA&s=10', initials: 'INF', sector: 'Enterprise Tech', color: 'from-sky-600/20 to-blue-500/10 text-sky-700' },
+      { id: 'rec-4', name: 'Aditya Birla Group', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSWg8Dcmvh_BjgxW5y9xM8wUjSgAGXKIj_Akyb2W4SDg&s=10', initials: 'ABG', sector: 'Conglomerate', color: 'from-red-600/20 to-rose-500/10 text-red-700' },
+      { id: 'rec-5', name: 'Tata Technologies', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4PBevrR5DFySK70ZGeooL1SAT5iy7S53l1PedR4c8zg&s=10', initials: 'TTL', sector: 'Automotive & Engg', color: 'from-indigo-600/20 to-blue-500/10 text-indigo-700' },
+      { id: 'rec-6', name: 'Tata Consultancy Services', logoUrl: 'https://vectorseek.com/wp-content/uploads/2023/09/Tata-Consultancy-Services-TCS-Logo-Vector.svg-.png', initials: 'TCS', sector: 'Global IT Solutions', color: 'from-blue-800/20 to-indigo-600/10 text-blue-900' },
+      { id: 'rec-7', name: 'Microsoft', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtjP9ZIjRukW5hGbMTEwDK9GA2ysDWG6qQpcDFQjlX4Q&s=10', initials: 'MSFT', sector: 'Cloud & Systems', color: 'from-teal-600/20 to-emerald-500/10 text-teal-700' },
+      { id: 'rec-8', name: 'Genpact', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1NtCnKanA49pV7BIplflfQjumgIp3C__YUWZS_qV9lg&s=10', initials: 'GEN', sector: 'Digital Transformation', color: 'from-amber-500/20 to-yellow-500/10 text-amber-800' }
+    ];
+
+    const UNIVERSITIES = [
+      { id: 'uni-1', name: 'Heritage Institute of Technology', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqkX5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v5v five', shortCode: 'HIT', type: 'Autonomous Engineering College', location: 'Kolkata, WB' },
+      { id: 'uni-2', name: 'JIS University', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2n1SethbpR-kRYXpUlydM6kBQ3_vVkE8-MFxUiPx3wQ&s=10', shortCode: 'JISU', type: 'Private State University', location: 'Agarpara, WB' },
+      { id: 'uni-3', name: 'Institute of Engg & Mgmt (IEM)', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjXrr0SEkTII9hWi7MtuPaxwBT6owTi4m8LO8dcTBjZg&s=10', shortCode: 'IEM', type: 'Tier-1 Engineering & B-School', location: 'Salt Lake, Kolkata' },
+      { id: 'uni-4', name: 'Techno India University', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7d01HZugdKyBSj2dCPlyWexO4Yj6V9nqGjApoO2RUA&s=10', shortCode: 'TIU', type: 'Premier Technical University', location: 'Salt Lake, Kolkata' },
+      { id: 'uni-5', name: 'Sister Nivedita University', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv1a8QZR4OAdWSVILB6VK3fvtp6AbNeuJ863DHsAd5A&s=10', shortCode: 'SNU', type: 'Multidisciplinary University', location: 'New Town, Kolkata' },
+      { id: 'uni-6', name: 'Narula Institute of Technology', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEy_0THifHdwFqJXOjIYl1mC7SRKjjgB0F9auE7l09Yw&s=10', shortCode: 'NiT', type: 'Autonomous Technical Institute', location: 'Agarpara, WB' },
+      { id: 'uni-7', name: 'Guru Nanak Institute of Tech', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTZAVy5YFOKNzwCFJ6Ni-O95DHp3EtYBlTBu-gOZnbpg&s=10', shortCode: 'GNIT', type: 'NBA & NAAC Accredited', location: 'Panihati, WB' },
+      { id: 'uni-8', name: 'Meghnad Saha Institute of Tech', logoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToTjGM5Gs7mC15-q_cJpnDqAdiNrsp7gRgiMg1uvrMqg&s', shortCode: 'MSIT', type: 'Techno India Group Campus', location: 'Uchhepota, Kolkata' }
+    ];
+
+
+    const GALLERY_PHOTOS = [
+      {
+        title: 'Summer Immersion Cohort',
+        desc: 'Hands-on team negotiation drills in Kolkata center',
+        tag: 'Classroom',
+        photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrE57LSnalMUc4npWMCdWZJWUCbZr9mSRAVvy4vhQY9qSIgIzr_taZP-de&s=10',
+        accent: 'from-blue-600 to-indigo-700'
+      },
+      {
+        title: 'Campus Placement Bootcamps',
+        desc: 'Live group discussion assessments with corporate HR judges',
+        tag: 'Workshops',
+        photoUrl: 'https://www.acte.in/wp-content/uploads/2025/10/Are-Bootcamps-Worth-It-Acte-2-e1760615665984-edited.png',
+        accent: 'from-emerald-600 to-teal-700'
+      },
+      {
+        title: 'Leadership Symposium',
+        desc: '1-on-1 executive mentoring and mock interview reviews',
+        tag: 'Mentorship',
+        photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSin1hGUyfVZRgWN5N-H5SRSqv60KBa94PTNU1brV1zaQ&s',
+        accent: 'from-cyan-600 to-blue-700'
+      },
+      {
+        title: 'Technical Bridge Hackathon',
+        desc: 'Practical campus-to-corporate simulated project deliveries',
+        tag: 'Projects',
+        photoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2c-D81XhrsAEvwBig2o6uvmnuruviabhT5fdQy73a7g&s=10',
+        accent: 'from-slate-700 to-blue-900'
+      }
+    ];
+
+    let SITE_GALLERY_ITEMS = [
+      {
+        id: 'gal-1',
+        title: 'Summer Internship Cohort Kickoff',
+        category: 'Campus Drives',
+        date: 'Summer Immersion Batch • Kolkata',
+        caption: 'Students and faculty mentors celebrating the launch of the Success Scholar Summer Internship program.',
+        photoUrl: 'https://successscholar.in/assets/images/img1.jpg',
+        gradient: 'from-blue-700 via-indigo-700 to-slate-900'
+      },
+      {
+        id: 'gal-2',
+        title: 'Interactive Soft Skills & Corporate Readiness Session',
+        category: 'Workshops',
+        date: 'Executive Training Hall',
+        caption: 'Faculty trainer leading an interactive communication and workplace etiquette session with students.',
+        photoUrl: 'https://successscholar.in/assets/images/img2.jpg',
+        gradient: 'from-indigo-700 via-blue-800 to-slate-900'
+      },
+      {
+        id: 'gal-3',
+        title: 'Focused Classroom Learning & Case Analysis',
+        category: 'Workshops',
+        date: 'Partner Campus Cohort',
+        caption: 'Students deeply engaged in structured problem-solving and corporate readiness exercises.',
+        photoUrl: 'https://successscholar.in/assets/images/img3.jpg',
+        gradient: 'from-emerald-700 via-teal-800 to-slate-900'
+      },
+      {
+        id: 'gal-4',
+        title: 'Milestone Batch Celebration & Peer Networking',
+        category: 'Convocation',
+        date: 'Campus Cohort Milestone',
+        caption: 'A full house of enthusiastic scholars celebrating the completion of their intensive training module.',
+        photoUrl: 'https://successscholar.in/assets/images/img4.jpg',
+        gradient: 'from-sky-700 via-blue-800 to-indigo-950'
+      },
+      {
+        id: 'gal-5',
+        title: 'Graduating Cohort & Mentor Group Portrait',
+        category: 'Convocation',
+        date: 'Certification Day • Partner College',
+        caption: 'Proud students alongside their mentor after completing their Campus-to-Corporate immersion.',
+        photoUrl: 'https://successscholar.in/assets/images/img7.jpg',
+        gradient: 'from-slate-800 via-indigo-900 to-blue-950'
+      },
+      {
+        id: 'gal-6',
+        title: 'Live Financial Markets & Quantitative Analytics Seminar',
+        category: 'Seminars',
+        date: 'Auditorium Technical Session',
+        caption: 'Industry specialist demonstrating real-time market charts and data-driven decision-making to a packed auditorium.',
+        photoUrl: 'https://successscholar.in/assets/images/img9.jpg',
+        gradient: 'from-blue-800 via-cyan-800 to-slate-900'
+      },
+      {
+        id: 'gal-7',
+        title: 'Hands-On Digital Studio & Lab Demonstration',
+        category: 'Workshops',
+        date: 'Practical Lab Immersion',
+        caption: 'Small-group practical workstation mentoring where students observe live industry workflows.',
+        photoUrl: 'https://successscholar.in/assets/images/img10.jpg',
+        gradient: 'from-blue-700 via-slate-800 to-indigo-950'
+      },
+      {
+        id: 'gal-8',
+        title: 'Executive Leadership & Public Speaking Workshop',
+        category: 'Seminars',
+        date: 'Campus Leadership Module',
+        caption: 'Interactive oratorical coaching focusing on stage presence, structured persuasion, and audience engagement.',
+        photoUrl: 'https://successscholar.in/assets/images/port-1.jpeg',
+        gradient: 'from-indigo-800 via-blue-900 to-slate-900'
+      },
+      {
+        id: 'gal-9',
+        title: 'Success Scholar Internship Logbook Review',
+        category: 'Campus Drives',
+        date: 'Curriculum Assessment Drive',
+        caption: 'Students reviewing their official Success Scholar Internship Logbooks and structured weekly assignments.',
+        photoUrl: 'https://successscholar.in/assets/images/port-2.jpeg',
+        gradient: 'from-teal-700 via-emerald-800 to-slate-900'
+      },
+      {
+        id: 'gal-10',
+        title: 'High-Energy Group Discussion & Interview Prep',
+        category: 'Workshops',
+        date: 'Placement Readiness Bootcamp',
+        caption: 'Dynamic classroom simulation preparing candidates for Group Discussions and HR interviews.',
+        photoUrl: 'https://successscholar.in/assets/images/port-3.jpeg',
+        gradient: 'from-blue-700 via-indigo-800 to-slate-950'
+      }
+    ];
+    let selectedGalleryCategory = 'All';
+
+    const FAQS_DATA = [
+      {
+        question: 'Is a formal ISO-backed certification provided upon course completion?',
+        answer: 'Yes! As an ISO 9001:2015 certified training entity, every student who meets attendance benchmarks (min. 80%) and completes the capstone evaluation receives a digitally verifiable Success Scholar Certificate of Professional Competency, recognized by corporate recruitment partners.'
+      },
+      {
+        question: 'Can I transfer or reschedule my batch if college exams overlap?',
+        answer: 'Absolutely. We provide one free batch transfer per enrolled student. Simply notify our academic counselor at least 7 days before your scheduled module to shift to the subsequent weekend or evening cohort.'
+      },
+      {
+        question: 'What is the fee structure and are scholarship options available?',
+        answer: 'Our program fees vary depending on the track (4-week soft skills up to comprehensive 6-month immersion diplomas). We offer up to 40% merit scholarships for early applicants and campus partner college students based on our short screening quiz.'
+      },
+      {
+        question: 'How does the Internship 2026 Immersion Program guarantee industry readiness?',
+        answer: 'The 2026 Cohort focuses on 3 pillars: live simulated industry assignments, corporate executive mentorship, and direct interview shortlists across our network of 120+ recruitment partners in IT, Consulting, and Banking.'
+      }
+    ];
+
+    let applicantsList = [
+      { id: 'APP-1021', name: 'Priyanshu Sharma', email: 'priyanshu.s@heritage.edu.in', phone: '+91 98310 44211', college: 'Heritage Institute of Tech', track: 'Interview Prep', status: 'Admitted', appliedAt: '2 hours ago' },
+      { id: 'APP-1022', name: 'Ananya Mukherjee', email: 'ananya.m@jis.ac.in', phone: '+91 94331 87652', college: 'JIS College of Engineering', track: 'Corporate Readiness', status: 'In Review', appliedAt: '5 hours ago' },
+      { id: 'APP-1023', name: 'Rohan Sen', email: 'rohan.sen@iem.edu', phone: '+91 91234 56789', college: 'Institute of Engineering & Mgmt', track: 'Soft Skills', status: 'Admitted', appliedAt: '1 day ago' }
+    ];
+
+    const MAX_BATCH_CAPACITY = 50;
+    let selectedCategory = 'All';
+    let searchQuery = '';
+    let activeFaq = 0;
+    let currentApplyStep = 1;
+
+    // Authentication State
+    let currentUser = null;
+    let authToken = null;
+    let activeAuthRole = 'student';
+    let isRegisterMode = false;
+    let pendingEnrollTrack = null;
+    let localUsersStore = [];
+
+    function restoreAuthSession() {
+      try {
+        const savedUser = sessionStorage.getItem('ss_user');
+        const savedToken = sessionStorage.getItem('ss_token');
+        if (savedUser && savedToken) {
+          currentUser = JSON.parse(savedUser);
+          authToken = savedToken;
+        }
+      } catch (e) {
+        currentUser = null;
+        authToken = null;
+      }
+    }
+
+    function persistAuthSession(user, token) {
+      currentUser = user;
+      authToken = token || 'local-session-token';
+      try {
+        sessionStorage.setItem('ss_user', JSON.stringify(currentUser));
+        sessionStorage.setItem('ss_token', authToken);
+      } catch (e) {}
+    }
+
+    // Dark Mode State
+    function initTheme() {
+      const savedTheme = localStorage.getItem('ss-theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+        updateThemeButtonUI(true);
+      } else {
+        document.documentElement.classList.remove('dark');
+        updateThemeButtonUI(false);
+      }
+    }
+
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('ss-theme', isDark ? 'dark' : 'light');
+      updateThemeButtonUI(isDark);
+      lucide.createIcons();
+    }
+
+    function updateThemeButtonUI(isDark) {
+      const label = document.getElementById('theme-label');
+      const icon = document.getElementById('theme-icon');
+      if (label) label.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+      if (icon) icon.setAttribute('data-lucide', isDark ? 'sun' : 'moon');
+    }
+
+    // --- 2. FULL-STACK API SYNC ---
+    async function fetchCoursesFromAPI() {
+      try {
+        const res = await fetch('/api/courses');
+        if (res.ok) {
+          const json = await res.json();
+          if (json.data && json.data.length > 0) {
+            coursesList = json.data;
+            renderCourses();
+          }
+        }
+      } catch (err) {
+        console.info('Running in static fallback mode for courses.');
+      }
+    }
+
+    async function fetchApplicationsFromAPI() {
+      try {
+        const res = await fetch('/api/applications');
+        if (res.ok) {
+          const json = await res.json();
+          if (json.data) {
+            applicantsList = json.data;
+            renderAdminTable();
+            updateCohortCapacityUI();
+          }
+        }
+      } catch (err) {
+        console.info('Running in static fallback mode for applications.');
+      }
+    }
+
+    async function fetchVisitorStatsFromAPI() {
+      try {
+        const res = await fetch('/api/stats');
+        if (res.ok) {
+          const json = await res.json();
+          const el = document.getElementById('footer-visitor-count');
+          if (el && json.total_visitors) {
+            el.textContent = Number(json.total_visitors).toLocaleString();
+          }
+        }
+      } catch (err) {}
+    }
+
+    function updateCohortCapacityUI() {
+      const admittedCount = applicantsList.filter(a => a.status === 'Admitted').length;
+      const seatsFilled = Math.min(admittedCount, MAX_BATCH_CAPACITY);
+      const pct = Math.min(100, Math.round((seatsFilled / MAX_BATCH_CAPACITY) * 100));
+      const isFull = seatsFilled >= MAX_BATCH_CAPACITY;
+
+      const capText = document.getElementById('cohort-capacity-text');
+      const capBar = document.getElementById('cohort-capacity-bar');
+      const statusPill = document.getElementById('cohort-status-pill');
+      const statusText = document.getElementById('cohort-status-text');
+      const applyBtn = document.getElementById('cohort-apply-btn');
+      const applyBtnLabel = document.getElementById('cohort-apply-btn-label');
+
+      if (isFull) {
+        if (capText) {
+          capText.textContent = `100% Filled (${MAX_BATCH_CAPACITY} / ${MAX_BATCH_CAPACITY} Seats • Full)`;
+          capText.className = 'text-red-400 font-bold';
+        }
+        if (capBar) {
+          capBar.style.width = '100%';
+          capBar.className = 'bg-red-500 h-2.5 rounded-full transition-all duration-500';
+        }
+        if (statusPill) {
+          statusPill.className = 'inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/20 text-red-300 text-xs font-semibold border border-red-500/30';
+        }
+        if (statusText) {
+          statusText.textContent = 'Seat is Full • Cohort Capacity Reached';
+        }
+        if (applyBtn) {
+          applyBtn.disabled = true;
+          applyBtn.className = 'w-full py-3.5 px-6 bg-slate-700 text-slate-400 font-bold text-sm rounded-xl cursor-not-allowed flex items-center justify-center gap-2';
+        }
+        if (applyBtnLabel) {
+          applyBtnLabel.textContent = 'Seats Full (50 / 50 Enrolled)';
+        }
+      } else {
+        if (capText) {
+          capText.textContent = `${pct}% Filled (${seatsFilled} / ${MAX_BATCH_CAPACITY} Seats)`;
+          capText.className = 'text-emerald-400 font-bold';
+        }
+        if (capBar) {
+          capBar.style.width = `${pct}%`;
+          capBar.className = 'bg-gradient-to-r from-blue-500 to-emerald-400 h-2.5 rounded-full transition-all duration-500';
+        }
+        if (statusPill) {
+          statusPill.className = 'inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30';
+        }
+        if (statusText) {
+          statusText.textContent = `Admissions Open • ${MAX_BATCH_CAPACITY - seatsFilled} Seats Remaining`;
+        }
+        if (applyBtn) {
+          applyBtn.disabled = false;
+          applyBtn.className = 'w-full py-3.5 px-6 bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-500/30 transition-all flex items-center justify-center gap-2 cursor-pointer';
+        }
+        if (applyBtnLabel) {
+          applyBtnLabel.textContent = 'Apply for Priority Access';
+        }
+      }
+    }
+
+    // --- 3. RENDER FUNCTIONS ---
+    function renderMarquees() {
+      const recTrack = document.getElementById('recruiters-marquee-track');
+      const uniTrack = document.getElementById('universities-marquee-track');
+
+      recTrack.innerHTML = [...RECRUITERS, ...RECRUITERS].map(company => `
+        <div class="w-64 sm:w-72 shrink-0 bg-slate-50/90 hover:bg-white rounded-2xl p-4 border border-slate-200/90 hover:border-blue-300 hover:shadow-lg transition-all duration-300 flex items-center gap-3.5 group cursor-pointer">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br ${company.color} border border-slate-200/60 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:scale-105 transition-transform">
+            ${company.logoUrl
+              ? `<img src="${company.logoUrl}" alt="${company.name} logo" class="w-full h-full object-contain p-2" loading="lazy" />`
+              : `<div class="text-center">
+                  <span class="font-black text-sm tracking-tighter block leading-none">${company.initials}</span>
+                  <span class="text-[8px] uppercase tracking-wider font-bold opacity-75">Logo</span>
+                </div>`
+            }
+          </div>
+          <div class="flex-1 min-w-0">
+            <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-blue-600 transition-colors truncate">${company.name}</h4>
+            <p class="text-[11px] font-medium text-slate-500 truncate mt-0.5">${company.sector}</p>
+            <div class="flex items-center gap-1 text-[10px] text-emerald-600 font-semibold mt-1">
+              <i data-lucide="check-circle-2" class="w-3 h-3"></i>
+              <span>Active Recruiter</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      uniTrack.innerHTML = [...UNIVERSITIES, ...UNIVERSITIES].map(uni => `
+        <div class="w-72 sm:w-80 shrink-0 bg-white rounded-2xl p-4 sm:p-5 border border-slate-200 hover:border-indigo-400 hover:shadow-xl transition-all duration-300 flex items-center gap-4 group cursor-pointer">
+          <div class="w-14 h-14 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center shrink-0 overflow-hidden shadow-xs group-hover:scale-105 group-hover:bg-indigo-50 group-hover:border-indigo-300 transition-all">
+            ${uni.logoUrl
+              ? `<img src="${uni.logoUrl}" alt="${uni.name} seal" class="w-full h-full object-contain p-2" loading="lazy" />`
+              : `<div class="text-center">
+                  <i data-lucide="school" class="w-5 h-5 mx-auto text-indigo-600 mb-0.5"></i>
+                  <span class="font-black text-[9px] text-slate-700 tracking-tight uppercase block leading-none">${uni.shortCode}</span>
+                </div>`
+            }
+          </div>
+          <div class="flex-1 min-w-0">
+            <h4 class="font-extrabold text-sm text-slate-900 group-hover:text-indigo-600 transition-colors truncate">${uni.name}</h4>
+            <p class="text-[11px] font-medium text-slate-500 truncate mt-0.5">${uni.type}</p>
+            <div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-100 text-[10px]">
+              <span class="text-slate-400 flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-slate-400"></i>
+                ${uni.location}
+              </span>
+              <span class="text-indigo-600 font-bold bg-indigo-50 px-2 py-0.5 rounded">Official MoU</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderCategoryPills() {
+      const categories = [
+        'All',
+        'Campus Readiness',
+        'Soft Skills',
+        'Interview Prep',
+        'Leadership',
+        'Spoken English',
+        'Corporate & Legal',
+        'Aptitude & Sales',
+        'Creative & NLP'
+      ];
+      const container = document.getElementById('category-pills-container');
+      container.innerHTML = categories.map(cat => `
+        <button
+          onclick="selectCategory('${cat}')"
+          class="px-4 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+            selectedCategory === cat
+              ? 'bg-blue-600 text-white shadow-md shadow-blue-600/20'
+              : 'bg-white text-slate-600 hover:bg-slate-200/80 border border-slate-200'
+          }"
+        >
+          ${cat}
+        </button>
+      `).join('');
+    }
+
+    function renderCourses() {
+      const filtered = coursesList.filter(course => {
+        const matchesCategory = selectedCategory === 'All' || course.category === selectedCategory;
+        const matchesSearch = course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                              course.description.toLowerCase().includes(searchQuery.toLowerCase());
+        return matchesCategory && matchesSearch;
+      });
+
+      const grid = document.getElementById('courses-grid-container');
+      const empty = document.getElementById('courses-empty-state');
+
+      if (filtered.length === 0) {
+        grid.classList.add('hidden');
+        empty.classList.remove('hidden');
+      } else {
+        grid.classList.remove('hidden');
+        empty.classList.add('hidden');
+        grid.innerHTML = filtered.map(course => `
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+            <div class="p-6">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 font-bold text-[11px] border border-blue-200">
+                  ${course.category}
+                </span>
+                <div class="flex items-center gap-1 text-amber-500 text-xs font-bold">
+                  <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                  <span>${course.rating}</span>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">${course.title}</h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed line-clamp-3">${course.description}</p>
+              <div class="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5 text-slate-400"></i>${course.duration}</span>
+                <span class="flex items-center gap-1"><i data-lucide="award" class="w-3.5 h-3.5 text-emerald-500"></i>ISO Certified</span>
+                <span class="font-medium text-slate-700 bg-slate-100 px-2 py-0.5 rounded">${course.level}</span>
+              </div>
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-100 flex items-center gap-2">
+              <button onclick="openSyllabusModal('${course.id}')" class="flex-1 py-2 text-xs font-bold text-slate-700 hover:text-blue-700 hover:bg-white rounded-lg border border-slate-200 transition text-center cursor-pointer">
+                View Syllabus
+              </button>
+              <button onclick="handleStudentEnrollAction('${course.title.replace(/'/g, "\\'")}')" class="flex-1 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-xs transition text-center cursor-pointer">
+                Enroll Now
+              </button>
+            </div>
+          </div>
+        `).join('');
+      }
+      lucide.createIcons();
+    }
+
+    function renderGallery() {
+      const container = document.getElementById('gallery-grid-container');
+      container.innerHTML = GALLERY_PHOTOS.map(item => `
+        <div class="group relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300">
+          <div class="h-56 bg-gradient-to-br ${item.accent} p-6 flex flex-col justify-between text-white relative overflow-hidden">
+            ${item.photoUrl
+              ? `<img src="${item.photoUrl}" alt="${item.title}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-slate-900/20"></div>`
+              : ''
+            }
+            <div class="relative z-10 flex justify-between items-start">
+              <span class="px-2.5 py-1 bg-white/20 backdrop-blur-md text-[10px] uppercase font-bold rounded-md">${item.tag}</span>
+              <i data-lucide="users" class="w-5 h-5 text-white/80"></i>
+            </div>
+            <div class="relative z-10">
+              <h4 class="font-bold text-base leading-snug">${item.title}</h4>
+              <p class="text-xs text-white/85 mt-1">${item.desc}</p>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderPhotoGallery() {
+      const filterContainer = document.getElementById('photo-gallery-filters');
+      const gridContainer = document.getElementById('photo-gallery-grid');
+      if (!filterContainer || !gridContainer) return;
+
+      const categories = ['All', 'Workshops', 'Seminars', 'Campus Drives', 'Convocation'];
+      filterContainer.innerHTML = categories.map(cat => `
+        <button
+          onclick="selectGalleryCategory('${cat}')"
+          class="px-3.5 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+            selectedGalleryCategory === cat
+              ? 'bg-blue-600 text-white shadow-sm'
+              : 'bg-white text-slate-600 hover:bg-slate-200 border border-slate-200'
+          }"
+        >
+          ${cat}
+        </button>
+      `).join('');
+
+      const filtered = SITE_GALLERY_ITEMS.filter(
+        item => selectedGalleryCategory === 'All' || item.category === selectedGalleryCategory
+      );
+
+      gridContainer.innerHTML = filtered.map(item => `
+        <div
+          onclick="openGalleryLightbox('${item.id}')"
+          class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col"
+        >
+          <div class="relative h-56 w-full overflow-hidden bg-gradient-to-br ${item.gradient}">
+            ${item.photoUrl
+              ? `<img src="${item.photoUrl}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />`
+              : `<div class="w-full h-full flex flex-col items-center justify-center p-6 text-center text-white/90">
+                  <div class="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-xs border border-white/25 flex items-center justify-center mb-2.5 group-hover:scale-110 transition-transform">
+                    <i data-lucide="image" class="w-6 h-6 text-white"></i>
+                  </div>
+                  <span class="text-xs font-extrabold tracking-wide uppercase">Photo Slot Ready</span>
+                  <span class="text-[11px] text-white/70 mt-0.5">Add photoUrl for "${item.category}"</span>
+                </div>`
+            }
+            <div class="absolute top-3 left-3">
+              <span class="px-2.5 py-1 rounded-lg bg-slate-900/75 backdrop-blur-xs text-white text-[10px] font-bold uppercase tracking-wider">
+                ${item.category}
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="px-2.5 py-1 rounded-lg bg-white/90 text-slate-900 text-[10px] font-bold flex items-center gap-1 shadow-sm">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                Expand
+              </span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] font-semibold text-blue-600 mb-1">${item.date}</div>
+              <h3 class="font-bold text-base text-slate-900 group-hover:text-blue-600 transition-colors">${item.title}</h3>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">${item.caption}</p>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    function selectGalleryCategory(cat) {
+      selectedGalleryCategory = cat;
+      renderPhotoGallery();
+    }
+
+    function openGalleryLightbox(itemId) {
+      const item = SITE_GALLERY_ITEMS.find(g => g.id === itemId);
+      if (!item) return;
+
+      const mediaBox = document.getElementById('lightbox-media-box');
+      if (item.photoUrl) {
+        mediaBox.innerHTML = `<img src="${item.photoUrl}" alt="${item.title}" class="w-full h-full object-contain" />`;
+      } else {
+        mediaBox.innerHTML = `
+          <div class="w-full h-full bg-gradient-to-br ${item.gradient} flex flex-col items-center justify-center text-white p-8 text-center">
+            <i data-lucide="image" class="w-12 h-12 mb-3 text-white/80"></i>
+            <p class="font-bold text-base">${item.title}</p>
+            <p class="text-xs text-white/75 mt-1">Replace <code class="bg-black/30 px-1.5 py-0.5 rounded">photoUrl</code> in <code class="bg-black/30 px-1.5 py-0.5 rounded">SITE_GALLERY_ITEMS</code> with your image path.</p>
+          </div>
+        `;
+      }
+
+      document.getElementById('lightbox-category').textContent = item.category;
+      document.getElementById('lightbox-date').textContent = item.date;
+      document.getElementById('lightbox-title').textContent = item.title;
+      document.getElementById('lightbox-caption').textContent = item.caption;
+      document.getElementById('gallery-lightbox-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeGalleryLightbox() {
+      document.getElementById('gallery-lightbox-modal').classList.add('hidden');
+    }
+
+    function renderFaqs() {
+      const container = document.getElementById('faq-accordion-container');
+      container.innerHTML = FAQS_DATA.map((faq, index) => {
+        const isOpen = activeFaq === index;
+        return `
+          <div class="rounded-2xl border border-slate-200 overflow-hidden transition-all bg-slate-50/50 hover:bg-slate-50">
+            <button onclick="toggleFaq(${index})" class="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 text-sm sm:text-base cursor-pointer">
+              <span>${faq.question}</span>
+              <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-300 ${isOpen ? 'rotate-180 text-blue-600' : ''}"></i>
+            </button>
+            ${isOpen ? `<div class="px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">${faq.answer}</div>` : ''}
+          </div>
+        `;
+      }).join('');
+      lucide.createIcons();
+    }
+
+    // --- 4. INTERACTIVE HANDLERS ---
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      const isHidden = menu.classList.toggle('hidden');
+      icon.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+      lucide.createIcons();
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      menu.classList.add('hidden');
+      icon.setAttribute('data-lucide', 'menu');
+      lucide.createIcons();
+    }
+
+    function selectCategory(cat) {
+      selectedCategory = cat;
+      renderCategoryPills();
+      renderCourses();
+    }
+
+    function handleCourseSearch(val) {
+      searchQuery = val;
+      const clearBtn = document.getElementById('course-search-clear');
+      if (searchQuery) clearBtn.classList.remove('hidden');
+      else clearBtn.classList.add('hidden');
+      renderCourses();
+    }
+
+    function clearCourseSearch() {
+      searchQuery = '';
+      document.getElementById('course-search-input').value = '';
+      document.getElementById('course-search-clear').classList.add('hidden');
+      renderCourses();
+    }
+
+    function resetCourseFilters() {
+      selectedCategory = 'All';
+      clearCourseSearch();
+      renderCategoryPills();
+      renderCourses();
+    }
+
+    function toggleFaq(index) {
+      activeFaq = activeFaq === index ? null : index;
+      renderFaqs();
+    }
+
+    // Syllabus Modal
+    function openSyllabusModal(courseId) {
+      const course = coursesList.find(c => c.id === courseId);
+      if (!course) return;
+
+      document.getElementById('modal-course-category').textContent = course.category;
+      document.getElementById('modal-course-duration').textContent = `• ${course.duration}`;
+      document.getElementById('modal-course-title').textContent = course.title;
+      document.getElementById('modal-course-desc').textContent = course.description;
+      document.getElementById('modal-course-syllabus').innerHTML = course.syllabus.map(item => `
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+          <span class="text-xs font-extrabold text-blue-600 bg-blue-100 px-2 py-0.5 rounded shrink-0">${item.week}</span>
+          <span class="text-xs font-semibold text-slate-800">${item.topic}</span>
+        </div>
+      `).join('');
+
+      document.getElementById('modal-course-enroll-btn').onclick = () => {
+        closeSyllabusModal();
+        handleStudentEnrollAction(course.title);
+      };
+
+      document.getElementById('syllabus-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeSyllabusModal() {
+      document.getElementById('syllabus-modal').classList.add('hidden');
+    }
+
+    // --- 5. SEPARATE STUDENT & ADMIN AUTHENTICATION ---
+    function openAuthModal(role = 'student') {
+      isRegisterMode = false;
+      switchAuthRole(role);
+      document.getElementById('auth-error-banner').classList.add('hidden');
+      document.getElementById('auth-userid').value = '';
+      document.getElementById('auth-password').value = '';
+      document.getElementById('auth-admin-secret').value = '';
+      document.getElementById('auth-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeAuthModal() {
+      document.getElementById('auth-modal').classList.add('hidden');
+    }
+
+    function switchAuthRole(role) {
+      activeAuthRole = role;
+      isRegisterMode = false;
+      document.getElementById('auth-error-banner').classList.add('hidden');
+      document.getElementById('auth-register-fields').classList.add('hidden');
+      document.getElementById('admin-secret-field').classList.add('hidden');
+
+      const tabStudent = document.getElementById('tab-role-student');
+      const tabAdmin = document.getElementById('tab-role-admin');
+      const title = document.getElementById('auth-modal-title');
+      const subtitle = document.getElementById('auth-modal-subtitle');
+      const label = document.getElementById('auth-userid-label');
+      const input = document.getElementById('auth-userid');
+      const submitBtn = document.getElementById('auth-submit-btn');
+      const submitLabel = document.getElementById('auth-submit-label');
+      const toggleBox = document.getElementById('student-register-toggle-box');
+      const togglePrompt = document.getElementById('auth-toggle-prompt');
+      const toggleLink = document.getElementById('auth-toggle-link');
+      const iconBox = document.getElementById('auth-role-icon-box');
+
+      toggleBox.classList.remove('hidden');
+      togglePrompt.textContent = role === 'student' ? 'New student?' : 'New administrator?';
+      toggleLink.textContent = role === 'student' ? 'Create Student User ID' : 'Register Admin ID';
+
+      if (role === 'student') {
+        tabStudent.className = 'py-2 text-xs font-bold rounded-lg bg-white text-blue-700 shadow-xs transition cursor-pointer';
+        tabAdmin.className = 'py-2 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-800 transition cursor-pointer';
+        iconBox.className = 'w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center';
+        iconBox.innerHTML = '<i data-lucide="user-check" class="w-5 h-5"></i>';
+        title.textContent = 'Student Sign In';
+        subtitle.textContent = 'Validate with your Student User ID & Password to enroll';
+        label.textContent = 'Student User ID *';
+        input.placeholder = 'Enter your Student ID';
+        submitBtn.className = 'w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer';
+        submitLabel.textContent = 'Validate Student & Sign In';
+      } else {
+        tabAdmin.className = 'py-2 text-xs font-bold rounded-lg bg-white text-indigo-700 shadow-xs transition cursor-pointer';
+        tabStudent.className = 'py-2 text-xs font-bold rounded-lg text-slate-500 hover:text-slate-800 transition cursor-pointer';
+        iconBox.className = 'w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center';
+        iconBox.innerHTML = '<i data-lucide="shield" class="w-5 h-5"></i>';
+        title.textContent = 'Admin Sign In';
+        subtitle.textContent = 'Restricted access: Validate with your Admin ID & Password';
+        label.textContent = 'Admin User ID *';
+        input.placeholder = 'Enter your Admin ID';
+        submitBtn.className = 'w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs rounded-xl shadow-md transition flex items-center justify-center gap-1.5 cursor-pointer';
+        submitLabel.textContent = 'Validate Admin & Open Portal';
+      }
+      lucide.createIcons();
+    }
+
+    function toggleStudentRegisterMode() {
+      isRegisterMode = !isRegisterMode;
+      const regFields = document.getElementById('auth-register-fields');
+      const secretField = document.getElementById('admin-secret-field');
+      const title = document.getElementById('auth-modal-title');
+      const submitLabel = document.getElementById('auth-submit-label');
+      const prompt = document.getElementById('auth-toggle-prompt');
+      const link = document.getElementById('auth-toggle-link');
+      const roleLabel = activeAuthRole === 'admin' ? 'Admin' : 'Student';
+
+      if (isRegisterMode) {
+        regFields.classList.remove('hidden');
+        if (activeAuthRole === 'admin') {
+          secretField.classList.remove('hidden');
+        } else {
+          secretField.classList.add('hidden');
+        }
+        title.textContent = `Create New ${roleLabel} ID`;
+        submitLabel.textContent = `Register ${roleLabel} & Sign In`;
+        prompt.textContent = 'Already have an ID?';
+        link.textContent = `Back to ${roleLabel} Sign In`;
+      } else {
+        regFields.classList.add('hidden');
+        secretField.classList.add('hidden');
+        title.textContent = `${roleLabel} Sign In`;
+        submitLabel.textContent = activeAuthRole === 'admin' ? 'Validate Admin & Open Portal' : 'Validate Student & Sign In';
+        prompt.textContent = activeAuthRole === 'student' ? 'New student?' : 'New administrator?';
+        link.textContent = activeAuthRole === 'student' ? 'Create Student User ID' : 'Register Admin ID';
+      }
+    }
+
+    async function handleAuthSubmit(e) {
+      e.preventDefault();
+      const userId = document.getElementById('auth-userid').value.trim().toUpperCase();
+      const password = document.getElementById('auth-password').value;
+      const fullName = document.getElementById('auth-fullname').value.trim();
+      const email = document.getElementById('auth-email').value.trim();
+      const adminSecret = document.getElementById('auth-admin-secret').value.trim();
+      const errBox = document.getElementById('auth-error-banner');
+      const errText = document.getElementById('auth-error-text');
+
+      errBox.classList.add('hidden');
+
+      if (isRegisterMode) {
+        if (!fullName || !email) {
+          errText.textContent = 'Please enter your Full Name and Email Address.';
+          errBox.classList.remove('hidden');
+          return;
+        }
+        if (activeAuthRole === 'admin' && !adminSecret) {
+          errText.textContent = 'Institution Admin Invite Code is required for first-time Admin registration.';
+          errBox.classList.remove('hidden');
+          return;
+        }
+        const registerEndpoint = activeAuthRole === 'admin' ? '/api/auth/register-admin' : '/api/auth/register-student';
+        const registerBody = activeAuthRole === 'admin'
+          ? { user_id: userId, full_name: fullName, email, password, admin_secret_code: adminSecret }
+          : { user_id: userId, full_name: fullName, email, password };
+
+        try {
+          const res = await fetch(registerEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(registerBody)
+          });
+          const data = await res.json();
+          if (!res.ok) {
+            errText.textContent = data.detail || 'Account registration failed.';
+            errBox.classList.remove('hidden');
+            return;
+          }
+          persistAuthSession(data.user, data.token);
+        } catch (err) {
+          if (activeAuthRole === 'admin' && adminSecret !== 'SS-ADMIN-2026') {
+            errText.textContent = 'Invalid Institution Admin Authorization Code.';
+            errBox.classList.remove('hidden');
+            return;
+          }
+          if (localUsersStore.some(u => u.user_id === userId)) {
+            errText.textContent = 'This User ID is already registered.';
+            errBox.classList.remove('hidden');
+            return;
+          }
+          const newUser = { user_id: userId, full_name: fullName, email, role: activeAuthRole, password };
+          localUsersStore.push(newUser);
+          persistAuthSession({ user_id: userId, full_name: fullName, email, role: activeAuthRole }, 'local-token');
+        }
+      } else {
+        try {
+          const res = await fetch('/api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ user_id: userId, password, role: activeAuthRole })
+          });
+          const data = await res.json();
+          if (!res.ok) {
+            errText.textContent = data.detail || `Invalid ${activeAuthRole.toUpperCase()} User ID or Password.`;
+            errBox.classList.remove('hidden');
+            return;
+          }
+          persistAuthSession(data.user, data.token);
+        } catch (err) {
+          const found = localUsersStore.find(
+            u => u.user_id === userId && u.password === password && u.role === activeAuthRole
+          );
+          if (!found) {
+            errText.textContent = `Invalid ${activeAuthRole.toUpperCase()} User ID or Password. Register an ID first if you are a new user.`;
+            errBox.classList.remove('hidden');
+            return;
+          }
+          persistAuthSession({ user_id: found.user_id, full_name: found.full_name, email: found.email, role: found.role }, 'local-token');
+        }
+      }
+
+      document.getElementById('auth-password').value = '';
+      document.getElementById('auth-admin-secret').value = '';
+
+      closeAuthModal();
+      updateNavbarAuthUI();
+
+      if (currentUser.role === 'admin') {
+        openAdminModal();
+      } else if (pendingEnrollTrack) {
+        const track = pendingEnrollTrack;
+        pendingEnrollTrack = null;
+        openApplyModal(track);
+      } else {
+        openStudentApplicationsModal();
+      }
+    }
+
+    function updateNavbarAuthUI() {
+      const loggedOut = document.getElementById('auth-logged-out-controls');
+      const loggedIn = document.getElementById('auth-logged-in-controls');
+      const badge = document.getElementById('nav-user-badge');
+      const portalLabel = document.getElementById('nav-portal-label');
+
+      if (currentUser) {
+        loggedOut.classList.add('hidden');
+        loggedOut.classList.remove('md:flex');
+        loggedIn.classList.remove('hidden');
+        loggedIn.classList.add('flex');
+        badge.textContent = `${currentUser.role === 'admin' ? 'Admin' : 'Student'}: ${currentUser.user_id}`;
+        portalLabel.textContent = currentUser.role === 'admin' ? 'Admin Dashboard' : 'My Status';
+      } else {
+        loggedOut.classList.remove('hidden');
+        loggedOut.classList.add('md:flex');
+        loggedIn.classList.add('hidden');
+        loggedIn.classList.remove('flex');
+      }
+    }
+
+    function logoutUser() {
+      currentUser = null;
+      authToken = null;
+      pendingEnrollTrack = null;
+      try {
+        sessionStorage.removeItem('ss_user');
+        sessionStorage.removeItem('ss_token');
+      } catch (e) {}
+      updateNavbarAuthUI();
+    }
+
+    function handleStudentEnrollAction(trackName) {
+      const admittedCount = applicantsList.filter(a => a.status === 'Admitted').length;
+      if (admittedCount >= MAX_BATCH_CAPACITY) {
+        updateCohortCapacityUI();
+        return;
+      }
+      if (!currentUser || currentUser.role !== 'student') {
+        pendingEnrollTrack = trackName;
+        openAuthModal('student');
+        return;
+      }
+      openApplyModal(trackName);
+    }
+
+    function openRoleDashboard() {
+      if (!currentUser) {
+        openAuthModal('student');
+        return;
+      }
+      if (currentUser.role === 'admin') {
+        openAdminModal();
+      } else {
+        openStudentApplicationsModal();
+      }
+    }
+
+    // Student Read-Only Applications Modal
+    async function openStudentApplicationsModal() {
+      if (!currentUser || currentUser.role !== 'student') {
+        openAuthModal('student');
+        return;
+      }
+      await fetchApplicationsFromAPI();
+      const container = document.getElementById('student-apps-list');
+      const myApps = applicantsList.filter(
+        a => a.email.toLowerCase() === currentUser.email.toLowerCase() || a.name.toLowerCase() === currentUser.full_name.toLowerCase()
+      );
+
+      if (myApps.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-10 bg-slate-50 rounded-2xl border border-slate-200">
+            <p class="font-bold text-slate-800 text-sm">No enrollments submitted yet</p>
+            <p class="text-xs text-slate-500 mt-1">Logged in as <strong>${currentUser.user_id}</strong> (${currentUser.full_name}). Click below to apply for a course.</p>
+          </div>
+        `;
+      } else {
+        container.innerHTML = myApps.map(app => `
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-between gap-4">
+            <div>
+              <div class="text-[11px] font-mono text-slate-500">${app.id} • ${app.appliedAt}</div>
+              <div class="font-bold text-slate-900 text-sm mt-0.5">${app.track}</div>
+              <div class="text-xs text-slate-600">${app.college}</div>
+            </div>
+            <span class="px-3 py-1 rounded-full text-xs font-bold ${
+              app.status === 'Admitted' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+            }">
+              ${app.status}
+            </span>
+          </div>
+        `).join('');
+      }
+      document.getElementById('student-apps-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeStudentApplicationsModal() {
+      document.getElementById('student-apps-modal').classList.add('hidden');
+    }
+
+    // Multi-Step Enrollment Modal
+    function openApplyModal(defaultTrack) {
+      currentApplyStep = 1;
+      document.getElementById('apply-form-view').classList.remove('hidden');
+      document.getElementById('apply-success-view').classList.add('hidden');
+      document.getElementById('apply-step-1').classList.remove('hidden');
+      document.getElementById('apply-step-2').classList.add('hidden');
+      document.getElementById('apply-back-btn').classList.add('hidden');
+      document.getElementById('apply-step-badge').textContent = '1';
+      document.getElementById('apply-step-label').textContent = 'Step 1 of 2';
+      document.getElementById('apply-modal-heading').textContent = 'Personal Information';
+      document.getElementById('apply-modal-sub').textContent = 'Confirm your contact credentials to begin enrollment.';
+      document.getElementById('apply-next-label').textContent = 'Continue to Track Selection';
+
+      const submitErr = document.getElementById('apply-submit-error');
+      if (submitErr) submitErr.classList.add('hidden');
+
+      if (currentUser && currentUser.role === 'student') {
+        document.getElementById('input-fullName').value = currentUser.full_name;
+        document.getElementById('input-email').value = currentUser.email;
+      }
+
+      if (defaultTrack) {
+        const select = document.getElementById('input-interestTrack');
+        let matched = false;
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === defaultTrack) {
+            select.selectedIndex = i;
+            matched = true;
+            break;
+          }
+        }
+        if (!matched) {
+          const opt = document.createElement('option');
+          opt.value = defaultTrack;
+          opt.textContent = defaultTrack;
+          select.insertBefore(opt, select.firstChild);
+          select.selectedIndex = 0;
+        }
+      }
+      document.getElementById('apply-modal').classList.remove('hidden');
+    }
+
+    function goBackApplyStep() {
+      currentApplyStep = 1;
+      document.getElementById('apply-step-1').classList.remove('hidden');
+      document.getElementById('apply-step-2').classList.add('hidden');
+      document.getElementById('apply-back-btn').classList.add('hidden');
+      document.getElementById('apply-step-badge').textContent = '1';
+      document.getElementById('apply-step-label').textContent = 'Step 1 of 2';
+      document.getElementById('apply-modal-heading').textContent = 'Personal Information';
+      document.getElementById('apply-modal-sub').textContent = 'Enter your contact credentials to begin enrollment.';
+      document.getElementById('apply-next-label').textContent = 'Continue to Track Selection';
+    }
+
+    async function handleApplySubmit(e) {
+      e.preventDefault();
+      const fullName = document.getElementById('input-fullName').value.trim();
+      const email = document.getElementById('input-email').value.trim();
+      const phone = document.getElementById('input-phone').value.trim();
+
+      if (currentApplyStep === 1) {
+        let valid = true;
+        if (!fullName) { document.getElementById('err-fullName').classList.remove('hidden'); valid = false; }
+        else document.getElementById('err-fullName').classList.add('hidden');
+
+        if (!email || !/\S+@\S+\.\S+/.test(email)) { document.getElementById('err-email').classList.remove('hidden'); valid = false; }
+        else document.getElementById('err-email').classList.add('hidden');
+
+        if (!phone || phone.length < 10) { document.getElementById('err-phone').classList.remove('hidden'); valid = false; }
+        else document.getElementById('err-phone').classList.add('hidden');
+
+        if (!valid) return;
+
+        currentApplyStep = 2;
+        document.getElementById('apply-step-1').classList.add('hidden');
+        document.getElementById('apply-step-2').classList.remove('hidden');
+        document.getElementById('apply-back-btn').classList.remove('hidden');
+        document.getElementById('apply-step-badge').textContent = '2';
+        document.getElementById('apply-step-label').textContent = 'Step 2 of 2';
+        document.getElementById('apply-modal-heading').textContent = 'Academic & Track Details';
+        document.getElementById('apply-modal-sub').textContent = 'Select your desired specialization track.';
+        document.getElementById('apply-next-label').textContent = 'Submit Application';
+        return;
+      }
+
+      const college = document.getElementById('input-college').value.trim() || 'State University';
+      const degree = document.getElementById('input-degree').value;
+      const graduationYear = document.getElementById('input-graduationYear').value;
+      const interestTrack = document.getElementById('input-interestTrack').value;
+
+      let createdApp = {
+        id: `APP-${Math.floor(1000 + Math.random() * 9000)}`,
+        name: fullName,
+        email,
+        phone,
+        college,
+        degree,
+        graduation_year: graduationYear,
+        track: interestTrack,
+        status: 'In Review',
+        appliedAt: 'Just now'
+      };
+
+      try {
+        const res = await fetch('/api/applications', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fullName,
+            email,
+            phone,
+            college,
+            degree,
+            graduationYear,
+            interestTrack
+          })
+        });
+        if (res.ok) {
+          const json = await res.json();
+          if (json.application) {
+            createdApp = json.application;
+          }
+          await fetchApplicationsFromAPI();
+        } else {
+          const errJson = await res.json();
+          const submitErr = document.getElementById('apply-submit-error');
+          if (submitErr) {
+            submitErr.textContent = errJson.detail || 'Unable to submit application.';
+            submitErr.classList.remove('hidden');
+          }
+          return;
+        }
+      } catch (err) {
+        const duplicateLocal = applicantsList.some(
+          a => a.email.toLowerCase() === email.toLowerCase() && a.track.toLowerCase() === interestTrack.toLowerCase()
+        );
+        if (duplicateLocal) {
+          const submitErr = document.getElementById('apply-submit-error');
+          if (submitErr) {
+            submitErr.textContent = 'You have already submitted an application for this specialization track.';
+            submitErr.classList.remove('hidden');
+          }
+          return;
+        }
+        applicantsList.unshift(createdApp);
+      }
+
+      document.getElementById('success-applicant-name').textContent = createdApp.name;
+      document.getElementById('success-track-name').textContent = createdApp.track;
+      document.getElementById('success-assigned-id').textContent = `Assigned ID: ${createdApp.id}`;
+      document.getElementById('apply-form-view').classList.add('hidden');
+      document.getElementById('apply-success-view').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function resetApplyModal() {
+      document.getElementById('apply-modal').classList.add('hidden');
+      document.getElementById('input-fullName').value = '';
+      document.getElementById('input-email').value = '';
+      document.getElementById('input-phone').value = '';
+      document.getElementById('input-college').value = '';
+    }
+
+    // Admin Portal (Strictly Protected for Admin Role)
+    async function openAdminModal() {
+      if (!currentUser || currentUser.role !== 'admin') {
+        openAuthModal('admin');
+        return;
+      }
+      await fetchApplicationsFromAPI();
+      renderAdminTable();
+      document.getElementById('admin-modal').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeAdminModal() {
+      document.getElementById('admin-modal').classList.add('hidden');
+    }
+
+    function renderAdminTable() {
+      if (!currentUser || currentUser.role !== 'admin') return;
+      const query = document.getElementById('admin-search-input').value.toLowerCase();
+      const filtered = applicantsList.filter(a =>
+        a.name.toLowerCase().includes(query) ||
+        a.college.toLowerCase().includes(query) ||
+        a.track.toLowerCase().includes(query)
+      );
+
+      document.getElementById('admin-metric-total').textContent = applicantsList.length;
+      document.getElementById('admin-metric-admitted').textContent = applicantsList.filter(a => a.status === 'Admitted').length;
+      document.getElementById('admin-metric-pending').textContent = applicantsList.filter(a => a.status === 'In Review').length;
+
+      document.getElementById('admin-table-body').innerHTML = filtered.map(item => `
+        <tr class="hover:bg-slate-50">
+          <td class="p-3">
+            <div class="font-bold text-slate-900">${item.name}</div>
+            <div class="text-[11px] text-slate-500">${item.email}</div>
+          </td>
+          <td class="p-3 text-slate-600 font-medium">${item.college}</td>
+          <td class="p-3 text-slate-700"><span class="bg-slate-100 px-2 py-0.5 rounded font-medium">${item.track}</span></td>
+          <td class="p-3">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${
+              item.status === 'Admitted' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+            }">${item.status}</span>
+          </td>
+          <td class="p-3">
+            <div class="flex items-center gap-1.5">
+              <button onclick="toggleApplicantStatus('${item.id}')" class="px-2.5 py-1 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-[11px] transition cursor-pointer whitespace-nowrap">
+                Toggle Status
+              </button>
+              <button onclick="deleteApplicant('${item.id}')" class="px-2.5 py-1 rounded bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 font-semibold text-[11px] transition cursor-pointer whitespace-nowrap" title="Delete duplicate application">
+                Delete
+              </button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    async function toggleApplicantStatus(id) {
+      if (!currentUser || currentUser.role !== 'admin') {
+        openAuthModal('admin');
+        return;
+      }
+
+      const target = applicantsList.find(item => item.id === id);
+      if (!target) return;
+      const nextStatus = target.status === 'Admitted' ? 'In Review' : 'Admitted';
+
+      if (nextStatus === 'Admitted') {
+        const currentAdmitted = applicantsList.filter(a => a.status === 'Admitted').length;
+        if (currentAdmitted >= MAX_BATCH_CAPACITY) {
+          return;
+        }
+      }
+
+      try {
+        const res = await fetch(`/api/applications/${id}/status`, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${authToken || ''}`
+          },
+          body: JSON.stringify({ status: nextStatus })
+        });
+        if (res.ok) {
+          await fetchApplicationsFromAPI();
+          return;
+        }
+      } catch (err) {
+        console.info('Fallback status toggle');
+      }
+
+      applicantsList = applicantsList.map(item =>
+        item.id === id ? { ...item, status: nextStatus } : item
+      );
+      renderAdminTable();
+      updateCohortCapacityUI();
+    }
+
+    async function deleteApplicant(id) {
+      if (!currentUser || currentUser.role !== 'admin') {
+        openAuthModal('admin');
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/applications/${id}`, {
+          method: 'DELETE',
+          headers: {
+            'Authorization': `Bearer ${authToken || ''}`
+          }
+        });
+        if (res.ok) {
+          await fetchApplicationsFromAPI();
+          return;
+        }
+      } catch (err) {
+        console.info('Fallback delete applicant');
+      }
+
+      applicantsList = applicantsList.filter(item => item.id !== id);
+      renderAdminTable();
+      updateCohortCapacityUI();
+    }
+
+    function toggleAdminCourseForm() {
+      const box = document.getElementById('admin-new-course-box');
+      if (box) box.classList.toggle('hidden');
+    }
+
+    async function handleCreateCourse(e) {
+      e.preventDefault();
+      if (!currentUser || currentUser.role !== 'admin') return;
+
+      const payload = {
+        title: document.getElementById('new-course-title').value.trim(),
+        category: document.getElementById('new-course-category').value,
+        duration: document.getElementById('new-course-duration').value.trim(),
+        description: document.getElementById('new-course-desc').value.trim(),
+        week1Topic: document.getElementById('new-course-w1').value.trim(),
+        week2Topic: document.getElementById('new-course-w2').value.trim()
+      };
+
+      try {
+        const res = await fetch('/api/courses', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${authToken || ''}`
+          },
+          body: JSON.stringify(payload)
+        });
+        if (res.ok) {
+          await fetchCoursesFromAPI();
+          toggleAdminCourseForm();
+          e.target.reset();
+          return;
+        }
+      } catch (err) {}
+
+      coursesList.unshift({
+        id: `cs-${Date.now()}`,
+        title: payload.title,
+        category: payload.category,
+        level: 'All Levels',
+        duration: payload.duration,
+        badge: 'New',
+        rating: 4.9,
+        description: payload.description,
+        syllabus: [
+          { week: 'Week 1', topic: payload.week1Topic },
+          { week: 'Week 2', topic: payload.week2Topic }
+        ]
+      });
+      renderCourses();
+      toggleAdminCourseForm();
+      e.target.reset();
+    }
+
+    async function exportApplicationsCSV() {
+      if (!currentUser || currentUser.role !== 'admin') return;
+      try {
+        const res = await fetch('/api/applications/export', {
+          headers: { 'Authorization': `Bearer ${authToken || ''}` }
+        });
+        if (res.ok) {
+          const blob = await res.blob();
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'success_scholar_applications.csv';
+          a.click();
+          URL.revokeObjectURL(url);
+          return;
+        }
+      } catch (err) {}
+
+      const headers = ['ID', 'Name', 'Email', 'Phone', 'College', 'Track', 'Status'];
+      const csvRows = [headers.join(',')].concat(
+        applicantsList.map(a => [a.id, `"${a.name}"`, a.email, `"${a.phone}"`, `"${a.college}"`, `"${a.track}"`, a.status].join(','))
+      );
+      const blob = new Blob([csvRows.join('\n')], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'success_scholar_applications.csv';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    // --- 6. COUNTDOWN TIMER ---
+    function startCountdown() {
+      let timeLeft = { days: 34, hours: 14, mins: 42, secs: 19 };
+      setInterval(() => {
+        if (timeLeft.secs > 0) timeLeft.secs--;
+        else if (timeLeft.mins > 0) { timeLeft.mins--; timeLeft.secs = 59; }
+        else if (timeLeft.hours > 0) { timeLeft.hours--; timeLeft.mins = 59; timeLeft.secs = 59; }
+        else if (timeLeft.days > 0) { timeLeft.days--; timeLeft.hours = 23; timeLeft.mins = 59; timeLeft.secs = 59; }
+
+        document.getElementById('timer-days').textContent = timeLeft.days;
+        document.getElementById('timer-hours').textContent = timeLeft.hours;
+        document.getElementById('timer-mins').textContent = timeLeft.mins;
+        document.getElementById('timer-secs').textContent = timeLeft.secs;
+      }, 1000);
+    }
+
+    // --- 7. INITIALIZATION ---
+    window.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      initHeroCoverAssets();
+      restoreAuthSession();
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      updateNavbarAuthUI();
+      renderMarquees();
+      renderCategoryPills();
+      renderCourses();
+      renderGallery();
+      renderPhotoGallery();
+      renderFaqs();
+      updateCohortCapacityUI();
+      startCountdown();
+      lucide.createIcons();
+      fetchCoursesFromAPI();
+      fetchApplicationsFromAPI();
+      fetchVisitorStatsFromAPI();
+    });
+  </script>
+</body>
+</html>
